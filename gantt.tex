@@ -1,0 +1,125 @@
+
+\def\pgfcalendarmonthletter#1{%
+\ifcase#1 J\or J\or F\or M\or A\or M\or J\or J\or A\or S\or O\or N\or D\fi%
+}
+
+\begin{ganttchart}[
+        canvas/.append style={fill=none, draw=black!5, line width=.75pt},
+        hgrid style/.style={draw=black!5, line width=.75pt},
+        vgrid={*1{draw=black!5, line width=.75pt}},
+        %vgrid={*1{black}, *{11}{black!5}}, % doesnt work for some reason
+        x unit=.35cm,
+        y unit chart=.65cm,
+        time slot format=isodate-yearmonth,
+        time slot unit=month, % pgfgantt >= 5.0
+        %compress calendar, % pgfgantt < 5.0 => overleaf
+        title/.style={draw=none, fill=none},
+        title label font=\bfseries\footnotesize,
+        %title label node/.append style={below=7pt},
+        include title in canvas=false,
+        bar label font=\mdseries\small\color{black!70},
+        %bar label node/.append style={left=2cm},
+        bar/.append style={draw=none, fill=barcolor!50},
+        bar progress label font=\mdseries\footnotesize\color{black!70},
+        group/.append style={fill=barcolor},
+        group incomplete/.append style={fill=black},
+        group left shift=0,
+        group right shift=0,
+        group height=.5,
+        group peaks tip position=0,
+        %group label node/.append style={left=.6cm},
+        group progress label font=\bfseries\small,
+        link/.style={-latex, line width=1.5pt, linkred},
+        link label font=\scriptsize\bfseries,
+        link label node/.append style={below left=-2pt and 0pt,
+        milestone/.append style={circle},
+        milestone inline label node/.append style={left=5mm}}
+    ]{2021-01}{2025-12}
+    
+        %\gantttitle[
+        %    title label node/.append style={below left=7pt and -3pt}
+        %]{Month:\quad1}{1}
+        %\gantttitlecalendar{year, month=letter} \\
+        \gantttitlecalendar{year} \\
+        %\gantttitlelist{0,5,...,60}{1} \\
+        %% WP1
+        \definecolor{barcolor}{RGB}{153,204,254}
+        \ganttgroup[]{WP1 \wpOneShort}{2021-01}{2023-12} \\
+            \ganttbar[name=WP11]{\textbf{1.1} Conceptual framing \& ethics}{2021-01}{2023-12} \\
+            \ganttbar[name=WP11]{\textbf{1.2} Principles of r-HHI}{2023-01}{2023-06} \\
+
+        %\ganttlink[link type=f-s]{WBS1A}{WBS1B}
+
+        %% WP2
+        \definecolor{barcolor}{RGB}{153,2,254}
+        \ganttgroup[]{WP2 \wpTwoShort}{2021-01}{2024-12} \\
+            \ganttbar[name=WP21]{\textbf{2.1} Situation assessment}{2021-01}{2022-06} \\
+            \ganttbar[name=WP22]{\textbf{2.2} Human model}{2022-01}{2023-12} \\
+            \ganttbar[name=WP23]{\textbf{2.3} Interactions \& social groups}{2024-01}{2024-12} \\
+            \ganttbar[name=WP24]{\textbf{2.4} Social situation assessment}{2022-07}{2024-12} \\
+
+        %\ganttlink[link type=f-s]{WP21}{WP24}
+        %\ganttlink[link type=f-s]{WP22}{WP23}
+
+        %% WP3
+        \definecolor{barcolor}{RGB}{50,220,134}
+        \ganttgroup[]{WP3 \wpThreeShort}{2021-07}{2025-12} \\
+            \ganttbar[name=WP31]{\textbf{3.1} Behaviours baselining}{2021-07}{2022-12} \\
+            \ganttbar[name=WP32]{\textbf{3.2} Generative behaviours}{2023-01}{2023-12} \\
+            \ganttbar[name=WP33]{\textbf{3.3} Non-verbal behaviours}{2023-07}{2025-12} \\
+        %\ganttlink[link type=f-s]{WP12}{WP32}
+
+        %% WP4
+        \definecolor{barcolor}{RGB}{244,50,20}
+        \ganttgroup[]{WP4 \wpFourShort}{2021-01}{2025-12} \\
+            \ganttbar[name=WP41]{\textbf{4.1} Social teleology}{2023-01}{2024-12} \\
+            \ganttbar[name=WP42]{\textbf{4.2} Human-in-the-loop ML}{2021-07}{2025-06} \\
+            \ganttbar[name=WP43]{\textbf{4.3} Integrated cognitive arch.}{2021-01}{2025-06} \\
+
+
+        %% WP5
+        \definecolor{barcolor}{RGB}{234,200,20}
+        \ganttgroup[]{WP5 \wpFiveShort}{2022-07}{2025-12} \\
+            \ganttbar[name=WP51prep,inline,bar/.append style={fill=gray!20}]{preparation}{2021-07}{2021-12}
+            \ganttbar[name=WP51]{\textbf{5.1} WeTheCurious experiment}{2022-01}{2022-12} 
+            \ganttbar[name=WP51expl,inline,bar/.append style={fill=gray!20}]{analysis}{2023-01}{2023-06} \\
+            \ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2023-07}{2023-12}
+            \ganttbar[name=WP52]{\textbf{5.2} SEN schools experiment}{2024-01}{2024-12} 
+            \ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-01}{2025-06} \\
+            %\ganttbar[name=WP52prep,inline,bar/.append style={fill=gray!20}]{preparation}{2024-01}{2024-06}
+            %\ganttbar[name=WP52]{\textbf{5.2} Children's hospital experiment}{2024-07}{2025-06}
+            %\ganttbar[name=WP52expl,inline,bar/.append style={fill=gray!20}]{analysis}{2025-07}{2025-12} \ganttnewline[thick]
+
+        %\ganttlink[link type=f-s]{WP41}{WP51}
+
+
+        %\ganttlink[link type=f-s]{WBS1B}{WBS1C}
+        %\ganttlink[link type=f-f,link label node/.append style=left]{WBS1C}{WBS1D}
+
+        \ganttmilestone{\bf\sc Ethics workshops}{2021-04}
+        \ganttmilestone{}{2022-09}
+        \ganttmilestone{}{2023-09}
+        \ganttmilestone{}{2025-03} \ganttnewline[gray,dotted]
+
+
+        \ganttmilestone{\bf\sc Integration sprints}{2021-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2021-11}
+        \ganttmilestone{}{2022-06}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2022-11}
+        \ganttmilestone{}{2023-06}
+        \ganttmilestone{}{2023-12}
+        \ganttmilestone[milestone/.append style={fill=orange, circle}]{}{2024-05}
+        \ganttmilestone{}{2024-12}
+
+        % separate years
+        \ganttvrule{}{2021-12}
+        \ganttvrule{}{2022-12}
+        \ganttvrule{}{2023-12}
+        \ganttvrule{}{2024-12}
+        \ganttvrule{}{2025-12}
+
+
+%        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @WeTheCurious}{2021-12}
+%        \ganttvrule[vrule/.append style={orange, solid, thin}]{study @SEN school}{2023-12}
+
+\end{ganttchart}

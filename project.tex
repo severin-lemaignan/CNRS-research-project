@@ -1,0 +1,202 @@
+\documentclass[12pt,a4paper]{report}
+\usepackage{amssymb,amsmath}
+\usepackage{enumitem}
+\setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
+
+\usepackage{soul} % underlines
+\setuldepth{aaaa}
+\usepackage{framed}
+
+%\usepackage[style=authoryear]{biblatex}
+\usepackage[style=numeric,maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
+
+%\usepackage[maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
+%\usepackage[style=authoryear,babel=hyphen,backend=biber]{biblatex}
+\addbibresource{my-publications.bib}
+\addbibresource{biblio.bib}
+\addbibresource{cogarch.bib}
+\addbibresource{mutual-modelling.bib}
+
+
+
+\usepackage{xcolor}
+
+
+\usepackage{pdflscape}
+
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\setmainfont[ItalicFont={Cantarell-Oblique}]{cantarell}
+
+%\usepackage{footnote} % used for the 'savenotes' environment, used around tables that have footnotes/footcite
+%\makesavenoteenv{table}
+\usepackage{graphicx}
+\graphicspath{{figs/}}
+\usepackage{wrapfig}
+\usepackage{hyperref}
+\urlstyle{same}  % don't use monospace font for urls
+\usepackage[margin=4pt]{subcaption}
+
+\usepackage[a4paper,left=3cm,right=3cm,top=3cm,bottom=3cm]{geometry}
+\usepackage{longtable,booktabs}
+
+\usepackage{pgfgantt}
+\usepackage{rotating}
+
+\usepackage{tocloft}
+
+\usepackage[compact]{titlesec}
+\usepackage{blindtext, color}
+\definecolor{gray75}{gray}{0.75}
+\newcommand{\hsp}{\hspace{20pt}}
+\titleformat{\chapter}[hang]{\Huge\bfseries}{\textcolor{gray75}{|}\hsp}{0pt}{\Huge\bfseries}
+\titlespacing{\chapter}{0pt}{1em}{2em}
+
+%\titlespacing*{\section}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+%\titlespacing*{\subsection}
+%{0pt}{5.5ex plus 1ex minus .2ex}{4.3ex plus .2ex}
+
+
+\renewcommand{\thesubsubsection}{}
+
+\usepackage{xspace}
+\newcommand{\project}{WizUs\xspace}
+
+\usepackage{tablefootnote}
+
+\newcommand{\task}[2]{\vspace{0.5cm}\noindent\emph{Task T#1}: {\bf #2}\par}
+
+\newcommand{\D}[3]{\emph{Deliverable D#1} (M#2): #3\\}
+
+\newcommand{\TODO}[1]{{\color{red}\textbf{#1}}}
+%\newcommand{\TODO}[1]{}
+
+\newcommand{\severin}[1]{{\color{red}\textbf{Severin: #1}}}
+\newcommand{\toseverin}[1]{{\color{red}\textbf{To Severin: #1}}}
+%\newcommand{\eu}[1]{{\color{teal}\textbf{Guidelines EU ERC: #1}}}
+\newcommand{\eu}[1]{}
+%\newcommand{\epsrc}[1]{}
+\newcommand{\epsrc}[1]{{\color{teal}\textbf{Guidelines EPSRC: #1}}}
+\newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
+
+\setcounter{secnumdepth}{0} % prevent section numbering, but still add sections to ToC
+
+\setlength\FrameSep{\fboxsep}
+\setlength{\topsep}{2pt}
+
+\title{\project}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Names of the Work packages
+
+\newcommand{\wpOne}{Framing robot-supported human-human interaction}
+\newcommand{\wpOneShort}{Framing r-HHI}
+
+
+\newcommand{\wpTwo}{Real-world Social Situation Assessment}
+\newcommand{\wpTwoShort}{Social Situation Assessment}
+
+\newcommand{\wpThree}{Generative social behaviours}
+\newcommand{\wpThreeShort}{Social behaviours}
+
+\newcommand{\wpFour}{Goal-driven socio-cognitive architecture}
+\newcommand{\wpFourShort}{Socio-cognitive architecture}
+
+
+\newcommand{\wpFive}{Experimental programme: long-term deployments in sensitive
+social spaces}
+\newcommand{\wpFiveShort}{Experimental programme}
+
+
+%\newcommand{\wpOne}{Project management \& dissemination}
+%\newcommand{\wpOneShort}{\wpOne{}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\begin{document}
+
+\begin{center}
+
+    \includegraphics[width=0.2\linewidth]{CNRS.pdf}
+    \vspace{2cm}
+
+    \textbf{\LARGE CNRS Research Project}
+
+    \vspace{4cm}
+    {\Huge AI for Socially-Driven Robots}
+
+    \vspace{2cm}
+    {\LARGE\bf Pr. Séverin Lemaignan}
+
+    \vspace{1cm}
+    {\Large Host laboratory:\\ \bf Laboratoire d'Analyse et d'Architecture des Systèmes (LAAS-CNRS)}
+\end{center}
+
+    \vspace{3cm}
+
+
+\section*{Summary}\label{abstract}
+
+
+AI is already part of our daily life, and robots are increasingly part of our
+everyday lives, supporting our ageing society, and assisting teachers in
+classrooms. In this context, how to ensure `by-design' that these social robots
+have a positive social impact? This question is the backbone of my
+research project, and my specific objective is that, within 5 years, we create
+a socially-intelligent and responsible robot, that (1) will have recognised
+social utility, and (2) will see long-term acceptance by its users.
+
+I formulate two main hypotheses: (1) this objective can only be achieved if the
+robot is socially-driven: the robot's behaviours must be driven by the intention
+to support positive human-human interactions. How this general principle
+translates into specific guidelines and algorithms -- while taking into account
+the principles of a responsible AI -- is a central contribution of the project.
+
+(2) Long-term acceptance requires genuine involvement of the end-users at every
+step of the design process. To this end, my project introduces a novel methodology
+involving `public-in-the-loop' machine learning: the large scale participation
+of end-users, over extended periods of time, to teach the robot how to become a
+good and responsible social helper.
+
+My research tests these two hypotheses with an ambitious work programme. It includes
+basic research and conceptual framing; extensive, beyond-state-of-art, technical
+developments; and an ambitious experimental programme, with a combined two
+years of field deployment of social robots in public spaces.
+
+This research project opens a unique window into the positive role social robots can play in our
+future societies; it will provide a lasting legacy, paving the way forward for a
+better understanding of the design of socially-intelligent robots that are
+socially useful and acceptable in the long-term.
+
+
+
+\tableofcontents
+
+\pagebreak
+
+
+\include{case-for-support}
+
+\pagebreak
+\chapter{Overview of the five first years}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Gantt chart
+
+\begin{landscape}
+\begin{figure}[!ht]
+\resizebox{\linewidth}{!}{
+    \input{gantt}
+}
+\end{figure}
+\end{landscape}
+\pagebreak
+
+
+
+\include{cv}
+
+\end{document}
+
