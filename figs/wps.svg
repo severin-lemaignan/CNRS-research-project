@@ -206,14 +206,14 @@
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
      inkscape:window-width="1920"
-     inkscape:window-height="1052"
+     inkscape:window-height="1025"
      id="namedview343"
      showgrid="false"
-     inkscape:zoom="0.44944923"
-     inkscape:cx="1070.8205"
-     inkscape:cy="626.71716"
-     inkscape:window-x="1920"
-     inkscape:window-y="0"
+     inkscape:zoom="0.6356172"
+     inkscape:cx="764.82832"
+     inkscape:cy="599.98503"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="g339"
      inkscape:snap-global="false"
@@ -965,7 +965,7 @@
            sodipodi:role="line"
            id="tspan1241"><tspan
    style="font-weight:bold"
-   id="tspan1243">4.1 </tspan>Ethics framework</tspan><tspan
+   id="tspan1243">4.1 </tspan>Responsible HRI</tspan><tspan
            style="font-weight:normal;stroke-width:0.796371"
            y="612.4646"
            x="-335.22665"
@@ -987,7 +987,8 @@
            y="731.9201"
            x="-335.22665"
            sodipodi:role="line"
-           id="tspan1351"><tspan
+           id="tspan1351"
+           rotate="0 0 0 0 0"><tspan
    style="font-weight:bold"
    id="tspan1152">4.4</tspan> Public engagement</tspan></text>
       <text
@@ -1000,12 +1001,12 @@
            sodipodi:role="line"
            x="-335.22665"
            y="484.64615"
-           style="font-style:normal;font-weight:bold;stroke-width:0.796371">4- Field interactions</tspan><tspan
+           style="font-style:normal;font-weight:bold;stroke-width:0.796371">4- Responsible, real-world</tspan><tspan
            sodipodi:role="line"
            x="-335.22665"
            y="524.46466"
            style="font-style:normal;font-weight:bold;stroke-width:0.796371"
-           id="tspan1140">and co-design</tspan></text>
+           id="tspan1140">Human-Robot Interaction</tspan></text>
     </g>
     <g
        id="g1973-7"
