@@ -8,7 +8,7 @@
 \usepackage{framed}
 
 %\usepackage[style=authoryear]{biblatex}
-\usepackage[style=numeric,maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
+\usepackage[sorting=none,style=numeric,maxcitenames=2,giveninits=true]{biblatex}
 
 %\usepackage[maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
 %\usepackage[style=authoryear,babel=hyphen,backend=biber]{biblatex}
@@ -90,11 +90,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Names of the Work packages
 
-\newcommand{\wpOne}{Framing robot-supported human-human interaction}
+\newcommand{\wpOne}{Framing responsible human-robot interactions}
 \newcommand{\wpOneShort}{Framing r-HHI}
 
 
-\newcommand{\wpTwo}{Real-world Social Situation Assessment}
+\newcommand{\wpTwo}{Perception for robust real-world Social Situation Assessment}
 \newcommand{\wpTwoShort}{Social Situation Assessment}
 
 \newcommand{\wpThree}{Generative social behaviours}
@@ -189,19 +189,8 @@ socially useful and acceptable in the long-term.
 \include{case-for-support}
 
 \pagebreak
-\section{Research plan for the first five years}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Gantt chart
-
-\begin{landscape}
-\begin{figure}[!ht]
-\resizebox{\linewidth}{!}{
-    \input{gantt}
-}
-\end{figure}
-\end{landscape}
-
+\include{short-term}
 
 \pagebreak
 
@@ -210,8 +199,9 @@ socially useful and acceptable in the long-term.
 \pagebreak
 
 
-
 \include{cv}
 
+\pagebreak
+\printbibliography
 \end{document}
 
