@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1148.6683mm"
+   height="511.09418mm"
+   viewBox="0 0 1148.6683 511.09418"
+   version="1.1"
+   id="svg1403"
+   inkscape:version="1.0.1 (0767f8302a, 2020-10-17)"
+   sodipodi:docname="puppet.svg">
+  <defs
+     id="defs1397" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.12374369"
+     inkscape:cx="774.54531"
+     inkscape:cy="634.85344"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-width="1920"
+     inkscape:window-height="1052"
+     inkscape:window-x="1920"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata1400">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(237.78836,131.31479)">
+    <image
+       sodipodi:absref="/home/severin/administratif/applications/CNRS/figs/husky.jpg"
+       xlink:href="husky.jpg"
+       y="-131.31479"
+       x="-237.78836"
+       id="image1976"
+       preserveAspectRatio="none"
+       height="509.4111"
+       width="423.33334" />
+    <image
+       sodipodi:absref="/home/severin/administratif/applications/CNRS/figs/immersive-teleoperation.jpg"
+       xlink:href="immersive-teleoperation.jpg"
+       y="-128.72765"
+       x="236.69804"
+       id="image1990"
+       preserveAspectRatio="none"
+       height="508.50705"
+       width="674.18188" />
+  </g>
+</svg>

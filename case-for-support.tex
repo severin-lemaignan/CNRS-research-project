@@ -1,5 +1,5 @@
 
-\chapter{Research project}\label{part1}
+%\chapter{Research project}\label{part1}
 
 \section{Long-term vision and ground-breaking nature of the project}
 
@@ -180,7 +180,7 @@ By joining the laboratory, I would create the conditions to 'future-proof' this
 scientific know-how, while developing a wide-ranging set of new research
 directions that promise to have a transformative impact on our digital future.
 
-
+\newpage
 \section{Methodology and approach to achieve impact}
 
 The overall aim of my research programme is to \textbf{create, sustain and better
@@ -320,17 +320,18 @@ long-term social human-robot interactions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\newpage
 \section{Implementation of the work programme}
 
-The five scientific objectives presented above underpin my research vision and
-scientific programme. This section now present how I intend to \emph{implement}
-these objectives, i.e.  what are the major research directions that I will
-research, develop and establish as active research fields in the coming years.
+The five scientific objectives presented in the previous section underpin my
+research vision and scientific programme. This section presents how I intend
+to \emph{implement} these objectives, i.e.  what are the major research
+directions that I will research, develop and establish as active research fields
+in the coming years.
 
 \vspace{0.5em}
 I intend to organise my research along \textbf{4+1 main research
-\emph{strands}}:
+strands}:
 
 \vspace{0.5em}
 \begin{itemize}
@@ -360,9 +361,9 @@ build-up an ambitious \textbf{experimental capacity} at LAAS-CNRS, that will
 significantly improve upon the current, mostly lab-based, experimental work
 conducted to date. Building on my extensive experience in real-world deployments
 of autonomous social robots (see section~\ref{cv}), I will establish an
-ambitious experimental programme, in close partnership with local institutions
-(see section~\ref{collaborations}), based on the field's best practices that I
-have contributed to establish~\parencite{baxter2016characterising}.
+ambitious experimental programme, in close partnership with local institutions,
+based on the field's best practices that I have contributed to
+establish~\parencite{baxter2016characterising}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -498,12 +499,12 @@ recent advances in symbolic (eg. data-driven semantic labelling, like the 4D
 convolution network MinkowskiNet~\parencite{choy20194d}) and hybrid (like
 \emph{conceptors}~\parencite{jaeger2014controlling}) representations capabilities.
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 1.1:} an extensible multi-modal
+\begin{outcome}{1.1}
+An extensible multi-modal
     software platform, that robustly tracks and represents the spatio-temporal
     environment of the robot (including the locations and objects in the robot
     vicinity).
-\end{framed}
+\end{outcome}
 
 \subsubsection{1.2 -- Multi-modal human model}
 
@@ -517,10 +518,10 @@ interactions~\parencite{bartlett2019what}. This dataset and the related methodol
 on data-driven social modeling will form the basis of this research workpackage,
 and will exploit the natural interaction data collected in Strand 5.
 
-\begin{framed}
-    {\noindent\bf Main outcome of 1.2:} A data-driven social signal processing
+\begin{outcome}{1.2}
+A data-driven social signal processing
     pipeline to model the surrounding humans.
-\end{framed}
+\end{outcome}
 
 \subsubsection{1.3 -- Interaction and group dynamics}
 
@@ -534,11 +535,11 @@ social dynamics analysis (eg~\parencite{durantin2017social,jermann2009physical,
 martinez2019collocated}) to apply it to real-time social assessment by a robot,
 itself embedded into the interaction.
 
-\begin{framed}
-    {\noindent\bf Main outcome of 1.3:} the software pipeline required for the automatic analysis of social
+\begin{outcome}{1.3}
+The software pipeline required for the automatic analysis of social
     dynamics at group-level, able to model in real-time the social context
     of the robot.
-\end{framed}
+\end{outcome}
 
 
 \subsubsection{1.4 -- Social situation assessment}
@@ -561,14 +562,14 @@ localisation, etc.) to higher-level socio-cognitive constructs, including group
 dynamics and perspective taking~\parencite{flavell1992perspectives} (as I previously
 framed in~\parencite{lemaignan2015mutual, dillenbourg2016symmetry}).
 
-\begin{framed}
-    {\noindent\bf Main outcome of 1.4:} a novel cognitive sub-system for social
+\begin{outcome}{1.4}
+A novel cognitive sub-system for social
     situation assessment, released as an open-source set of integrated ROS
     modules ("\emph{ROS4HRI}", Figure~\ref{fig:ros4hri}). This set of tools will enable the robot to
     represent its physical and social environment, and perform queries about it,
     including queries about past events (temporal model) and queries requiring
     higher socio-cognitive perceptual capabilities like perspective taking.
-\end{framed}
+\end{outcome}
 
 
 \subsubsection{1.5 -- Social embeddings}
@@ -583,11 +584,11 @@ to achieve with the current state-of-art~\parencite{bartlett2019what}), and
 potentially \emph{generate} plausible social situations, that the robot could
 use to eg. predict the next states of an interaction.
 
-\begin{framed}
-    {\noindent\bf Main outcome of 1.5:} the investigation of \emph{social
+\begin{outcome}{1.5}
+The investigation of \emph{social
     embeddings} as a general, sub-symbolic representation of the social
     environment of interactive robots.
-\end{framed}
+\end{outcome}
 
 \subsubsection{Experimental programme of Strand 1}
 
@@ -705,9 +706,15 @@ Learning from Demonstration\parencite{billard2008robot, argall2009survey},
 human-in-the-loop action policy learning\parencite{senft2016sparc,
 senft2019teaching}.
 
+\begin{collaboration}{Nicholas Asher, IRIT, ANITI}
+Dr. Nicholas Asher is a leading figure in natural language processing.
+Collaborating with him would open strong mutual opportunities to develop and
+apply language processing for physical, embodied agents.
+the LAAS would enable me to 
+\end{collaboration}
 
 
-\subsubsection{2.1: Immersive teleoperation to design richer non-verbal
+\subsubsection{2.1 -- Immersive teleoperation to design richer non-verbal
 interactions}
 
 %\begin{figure}[!htbp]
@@ -739,7 +746,7 @@ a robot which would be itself interacting with the lab members
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.7\linewidth]{figs/puppet.pdf}
+    \includegraphics[width=0.9\linewidth]{figs/puppet.pdf}
     \caption{\label{fig:puppet-robot} (left) Possible appearance of a
     puppet-robot that I will use to collect data. A tablet, displaying facial
     animations, is mounted on a robotic arm.  It can freely orient its `gaze'
@@ -750,18 +757,24 @@ a robot which would be itself interacting with the lab members
 
 \end{figure}
 
+\begin{collaboration}{Olivier Stasse, LAAS-CNRS}
+Olivier Stasse is an expert in humanoid motion, and has past experience in
+working with dancers to inform the design of complex motions. I have a
+track-record of collaboration with him on art-driven design
+methodologies~\parencite{lemaignan2012roboscopie}.
+\end{collaboration}
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 2.1:} the research, development and
+\begin{outcome}{2.1}
+The research, development and
     implementation of novel non-verbal communication modalities, including for
     instance a robot 'body language' for social interactions and soundscapes; a
     large dataset of such interactions, recorded in immersive conditions, and
     suitable for machine learning.
 
-\end{framed}
+\end{outcome}
 
 
-\subsection{2.1 -- Generative neural network for social behaviour production}
+\subsubsection{2.2 -- Generative neural network for social behaviour production}
 
 %Designing behaviours that
 %enable sustained, long-term engagement in a social human-robot interaction is
@@ -961,12 +974,12 @@ state of the interaction instead of simply emotions.
 %robot controller if deemed necessary. We aim at publishing the results
 %of this main study shortly after the end of the one-year period.
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 2.2:} a generative neural network
+\begin{outcome}{2.2}
+A generative neural network
     able to produce non-verbal yet multi-modal social behaviours. They will
     combine expressive gestures, gazing behaviours, facial expressions, and
     expressive sounds.
-\end{framed}
+\end{outcome}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1004,13 +1017,13 @@ transposed into algorithms, these long-term social goals will first be
 co-defined and co-created by the end-users and the public in terms of
 \emph{interaction principles for useful and responsible social robots}.
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 3.1:} the algorithmic translation of 
+\begin{outcome}{3.1}
+The algorithmic translation of 
     interaction principles into long-term social goals for the robot; eg a
     long-term, socially-driven action policy for the robot.
-\end{framed}
+\end{outcome}
 
-\textbf{3.2 -- Learning from humans to achieve `by-design' responsible \&
+\subsubsection{3.2 -- Learning from humans to achieve by-design responsible \&
 trustworthy AI}
 
 I have recently obtained promising results on human-in-the-loop social
@@ -1030,13 +1043,13 @@ more trustworthy AI system, by involving the end-users in the creation of the
 robot behaviours, thus offering a level of behavioural transparency to the
 end-users.
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 3.2:} a human-in-the-loop reinforcement
+\begin{outcome}{3.2}
+A human-in-the-loop reinforcement
     learning paradigm, suitable for in-situ teaching of the robot by the
     end-users themselves, demonstrated in complex social environments.
-\end{framed}
+\end{outcome}
 
-\textbf{3.3 -- Integrating a socially-driven architecture for long-term interaction}
+\subsubsection{3.3 -- Integrating a socially-driven architecture for long-term interaction}
 
 This research strand builds on the state of art in cognitive architectures
 (disembodied
@@ -1068,12 +1081,12 @@ re-assessement of a policy (here, our long-term social teleology) based on
 specific experience (here, the end-user-taught policy).
 
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 3.3:} A cognitive architecture, implemented
+\begin{outcome}{3.3}
+A cognitive architecture, implemented
     on the LAAS social robots, that enables long-term social engagement, by combining
     long-term goals with domain-specific action policies, taught by the
     end-users themselves.
-\end{framed}
+\end{outcome}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1086,11 +1099,12 @@ The basic, long-term ambition of my research programme is to re-investigate the
 underpinnings of human-robot interaction by taking a \textbf{strong
 human-centered perspective}. I frame this as a shift from \emph{human-robot
 interaction} to \emph{robot-supported human-human interactions} (r-HHI). This
-last major strand of research operationalises this objective as two main tasks:
-a theoretical contribution, examining the interplay between r-HHI, responsible
-AI, and ethics; and a large-scale study to gather public input.
+last major strand of research operationalises this objective in term of a basic
+contribution: examining the interplay between r-HHI, responsible
+AI, and ethics. This will be directly influenced by the experiemental work
+described in Strand 5.
 
-\subsubsection{4.1 -- Conceptual framing of r-HHI and ethical framework} 
+\subsubsection{Conceptual framing of r-HHI and ethical framework} 
 
 The first task in Strand 4 is to research and define the framework that will provide
 the conceptual frame around questions like: what role should social robots have?
@@ -1227,44 +1241,13 @@ acting as an Expert Collaborator on ethics for the European Joint Research
 Centre), and will create a public opportunity to debate and iterate over
 ethics guidelines for responsible long-term social interactions with robots.
 
-\begin{framed}
-    {\noindent\bf Main outcomes of 4.1:} a conceptual framework that clarify and
-    organise together the questions raised by long-term social interactions;
-    initial ethical guidelines for such interactions, aimed at informing future
-    policy making.
-\end{framed}
+\begin{outcome}{4}
+A conceptual framework that clarify and organise together the questions raised
+by long-term social interactions; ethical guidelines for such
+interactions, aimed at informing future policy making.
 
+\end{outcome}
 
-\subsubsection{4.2 -- Crowd-sourced patterns of robot-supported social
-interactions}
-
-In order to broadly engage the public with defining what future robots should do
-to be perceived as responsible, beneficial, and engaging, I intend to create and
-deploy a novel investigation methodology that I term `experimental
-crowd-sourcing'. For one year, in close partnership with local institutions
-(like Toulouse's "Le Quai des Savoirs"), the general public will be invited to
-teleoperate my robots, with the objective of interacting and assisting
-other visitors. The participants will remotely control the robot through a
-tablet interface (similar to the setup I created
-for~\parencite{senft2019teaching} and~\parencite{winkle2020insitu}), and
-interviews of both the teleoperators and the visitors interacting with the robot
-will be conducted in parallel, collecting in a structured manner the interaction
-patterns and social norms that will emerge over the course of the study.
-Additional focus groups will be organised with the public to reflect and
-iterate on these principles.
-
-\TODO{finish that}
-During the duration of the study, one researcher will be permanently based at
-the science museum, and the museum staff themselves will be trained to
-communicate about the aims of the study. Anonymous interaction data (eg, body
-postures) will be collected as well, and feed into WP2 and WP3.
-
-\begin{framed}
-    {\noindent\bf Main outcomes of 4.2:} a set of crowd-sourced interaction
-    patterns and principles, that will inform the long-term social goals of the
-    robot (4.1); a large dataset of social interactions to feed into Strands 2
-    and 3.
-\end{framed}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -1345,6 +1328,49 @@ established in T1.1, the ethical considerations pertaining to these experiments
 are further discussed below, in the section on ethics, and in the separate annex
 on ethics, uploaded alongside this proposal.
 
+
+\subsubsection{5.1 -- Crowd-sourced patterns of robot-supported social
+interactions}
+
+In order to broadly engage the public with defining what future robots should do
+to be perceived as responsible, beneficial, and engaging, I intend to create and
+deploy a novel investigation methodology that I term `experimental
+crowd-sourcing'. For one year, in close partnership with local institutions
+(like Toulouse's "Le Quai des Savoirs"), the general public will be invited to
+teleoperate my robots, with the objective of interacting and assisting
+other visitors. The participants will remotely control the robot through a
+tablet interface (similar to the setup I created
+for~\parencite{senft2019teaching} and~\parencite{winkle2020insitu}), and
+interviews of both the teleoperators and the visitors interacting with the robot
+will be conducted in parallel, collecting in a structured manner the interaction
+patterns and social norms that will emerge over the course of the study.
+Additional focus groups will be organised with the public to reflect and
+iterate on these principles.
+
+\TODO{finish that}
+During the duration of the study, one researcher will be permanently based at
+the science museum, and the museum staff themselves will be trained to
+communicate about the aims of the study. Anonymous interaction data (eg, body
+postures) will be collected as well, and feed into WP2 and WP3.
+
+\begin{collaboration}{Toulouse Science Centre \emph{Le Quai des Savoirs}
+    \newline \& local science charities}
+
+    This work will only be successful if it reaches out to a broad and diverse
+    public. I have an established network of contact in the local science
+    communication community (eg local science charities \emph{Planète Sciences},
+    \emph{Les Petits Débrouillards}) and intend to establish a solid
+    collaboration with Toulouse Science Centre \emph{Le Quai des Savoirs} where
+    field studies could be run.
+    
+\end{collaboration}
+
+\begin{outcome}{5.1}
+A set of crowd-sourced interaction
+    patterns and principles, that will inform the long-term social goals of the
+    robot (4.1); a large dataset of social interactions to feed into Strands 2
+    and 3.
+\end{outcome}
 
 
 \subsubsection{Experimental approach}

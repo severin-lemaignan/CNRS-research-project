@@ -1,4 +1,4 @@
-\documentclass[12pt,a4paper]{report}
+\documentclass[12pt,a4paper]{article}
 \usepackage{amssymb,amsmath}
 \usepackage{enumitem}
 \setlist{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt}
@@ -79,6 +79,35 @@
 %\newcommand{\epsrc}[1]{}
 \newcommand{\epsrc}[1]{{\color{teal}\textbf{Guidelines EPSRC: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
+
+
+\newenvironment{collaboration}[1]
+{\begin{framed}
+%\marginpar{#1}
+%[RGB]{214,141,0}{251,240,220}
+\begin{wrapfigure}[2]{l}{1.0cm}
+	\vspace{-14pt}
+	\includegraphics[width=1.1cm]{group.pdf}
+\end{wrapfigure}
+\noindent\textbf{Collaborating with #1}\\[0.6em]
+}
+{\end{framed}
+}
+
+\newenvironment{outcome}[1]
+{\begin{framed}
+%\marginpar{#1}
+%[RGB]{214,141,0}{251,240,220}
+\begin{wrapfigure}[1]{l}{0.5cm}
+	\vspace{-17pt}
+	\includegraphics[width=0.5cm]{outcome.pdf}
+\end{wrapfigure}
+\vspace{4pt}
+\noindent\textbf{Research strand #1 -- targeted outcomes:}\\[0.6em]
+}
+{\end{framed}
+}
+
 
 \setcounter{secnumdepth}{0} % prevent section numbering, but still add sections to ToC
 
@@ -199,7 +228,7 @@ socially useful and acceptable in the long-term.
 \pagebreak
 
 
-\include{cv}
+%\include{cv}
 
 \pagebreak
 \printbibliography
