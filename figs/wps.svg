@@ -25,7 +25,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -213,12 +213,12 @@
      id="namedview343"
      showgrid="false"
      inkscape:zoom="0.6356172"
-     inkscape:cx="873.79784"
-     inkscape:cy="620.58031"
+     inkscape:cx="1176.9532"
+     inkscape:cy="544.55367"
      inkscape:window-x="1920"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g1347"
+     inkscape:current-layer="g942-2"
      inkscape:snap-global="false"
      fit-margin-top="0"
      fit-margin-left="0"
@@ -253,20 +253,6 @@
          inkscape:connector-curvature="0"
          d="m 1363.1577,53.061285 30.9955,-23.063415 -38.5687,-2.255907 z"
          id="path1780" />
-      <text
-         id="text2483-3"
-         y="279.92786"
-         x="-1285.3136"
-         style="font-style:normal;font-weight:normal;font-size:32.2589px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.806472"
-         xml:space="preserve"
-         inkscape:transform-center-x="1.7306363"
-         inkscape:transform-center-y="8.5960083"
-         transform="matrix(-0.97946813,0.20159906,0.20159906,0.97946813,0,0)"><tspan
-           id="tspan2481-7"
-           style="font-weight:bold;stroke-width:0.806472"
-           y="279.92786"
-           x="-1285.3136"
-           sodipodi:role="line">WP2</tspan></text>
     </g>
     <g
        id="g1310"
@@ -880,7 +866,7 @@
              x="409.02551"
              y="332.60504"
              style="font-weight:bold;stroke-width:0.796371"
-             id="tspan1150-7">1- Social Situation Assessment</tspan></text>
+             id="tspan1150-7">1. Social Situation Assessment</tspan></text>
       </g>
       <g
          id="g1326-9"
@@ -967,7 +953,7 @@
            sodipodi:role="line"
            x="-335.22665"
            y="484.64615"
-           style="font-style:normal;font-weight:bold;stroke-width:0.796371">4- Responsible, real-world</tspan><tspan
+           style="font-style:normal;font-weight:bold;stroke-width:0.796371">4. Responsible, real-world</tspan><tspan
            sodipodi:role="line"
            x="-335.22665"
            y="524.46466"
@@ -1243,7 +1229,7 @@
        transform="matrix(-0.86167181,0.50746595,0.50746595,0.86167181,2190.7396,412.14664)">
       <path
          id="path938-6"
-         d="M 868.67069,68.213516 C 1025.0605,119.73536 1191.7973,99.48491 1338.9579,39.265614"
+         d="M 966.15051,-92.856276 C 1075.5467,79.446601 1191.7973,99.48491 1338.9579,39.265614"
          inkscape:connector-curvature="0"
          style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
          sodipodi:nodetypes="cc" />
@@ -1252,39 +1238,10 @@
          d="m 1341.2073,55.171824 30.9955,-23.063414 -38.5687,-2.255908 z"
          inkscape:connector-curvature="0"
          style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
-      <text
-         transform="matrix(-0.95390305,0.30011491,0.30011491,0.95390305,0,0)"
-         inkscape:transform-center-y="5.603997"
-         inkscape:transform-center-x="6.7453859"
-         xml:space="preserve"
-         style="font-style:normal;font-weight:normal;font-size:32.2589px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.806472"
-         x="-1232.0991"
-         y="433.48712"
-         id="text1810"><tspan
-           sodipodi:role="line"
-           x="-1232.0991"
-           y="433.48712"
-           style="font-weight:bold;stroke-width:0.806472"
-           id="tspan1808">WP3</tspan></text>
     </g>
     <g
        id="g1604"
        transform="translate(0,22)">
-      <g
-         transform="matrix(0.34132975,-0.85795427,0.85795427,0.34132975,56.545799,1138.4496)"
-         id="g1314">
-        <path
-           sodipodi:nodetypes="cc"
-           style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
-           inkscape:connector-curvature="0"
-           d="M 437.68125,-11.887978 C 332.48615,17.708096 269.00302,131.76372 270.38583,169.92279"
-           id="path243" />
-        <path
-           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
-           inkscape:connector-curvature="0"
-           d="m 257.17197,169.9228 13.21387,36.30478 13.21386,-36.30478 z"
-           id="path245" />
-      </g>
       <g
          id="g2509"
          transform="matrix(0.66264308,0,0,0.66264308,475.65339,289.64767)">
@@ -1362,7 +1319,7 @@
       </g>
       <g
          id="g2619"
-         transform="matrix(0.66264308,0,0,0.66264308,151.82821,433.60224)">
+         transform="matrix(0.66264308,0,0,0.66264308,-51.697211,291.46384)">
         <g
            transform="translate(-6.2006925,220.12458)"
            id="g2583">
@@ -1450,7 +1407,7 @@
              style="font-weight:bold;stroke-width:0.796371"
              y="455.3204"
              x="302.04288"
-             sodipodi:role="line">3- Cognitive Architecture</tspan></text>
+             sodipodi:role="line">3. Cognitive Architectures</tspan></text>
       </g>
       <g
          transform="matrix(0.66264308,0,0,0.66264308,-9.360574,571.31694)"
@@ -1561,19 +1518,36 @@
            style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
       </g>
       <g
-         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,403.83586,-107.87563)"
-         id="g1252">
+         transform="matrix(0.56110892,-0.82774198,-0.82774198,-0.56110892,718.69021,2017.9271)"
+         id="g1252"
+         inkscape:transform-center-x="60.823285"
+         inkscape:transform-center-y="205.17645">
         <path
            sodipodi:nodetypes="cc"
-           style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
+           style="fill-rule:evenodd;stroke:#000000;stroke-width:19.99999994;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none"
            inkscape:connector-curvature="0"
-           d="m 885.40861,766.54714 13.53084,8.37413"
+           d="M 668.07817,619.22339 898.93945,774.92127"
            id="path1248" />
         <path
-           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
+           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8.51582;stroke-linecap:butt"
            inkscape:connector-curvature="0"
-           d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+           d="m 890.82534,787.91714 38.05837,6.95929 -21.01464,-32.40845 z"
            id="path1250" />
+      </g>
+      <g
+         id="g1372"
+         transform="matrix(-0.56110892,0.82774198,0.82774198,0.56110892,213.40943,-107.87563)">
+        <path
+           id="path1367"
+           d="m 767.86925,686.86967 131.0702,88.0516"
+           inkscape:connector-curvature="0"
+           style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
+           sodipodi:nodetypes="cc" />
+        <path
+           id="path1370"
+           d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+           inkscape:connector-curvature="0"
+           style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
       </g>
     </g>
     <g
@@ -1615,7 +1589,7 @@
            style="font-weight:bold;text-align:end;text-anchor:end;stroke-width:0.796371"
            y="571.57709"
            x="2232.3733"
-           sodipodi:role="line">2- Generative </tspan><tspan
+           sodipodi:role="line">2. Generative </tspan><tspan
            style="font-style:normal;font-weight:bold;text-align:end;text-anchor:end;stroke-width:0.796371"
            y="611.39557"
            x="2232.3733"
@@ -1623,7 +1597,7 @@
            id="tspan1405">social behaviours</tspan></text>
       <g
          id="g1235-4-6"
-         transform="matrix(0.66264308,0,0,0.66264308,1625.7647,124.39093)">
+         transform="matrix(0.66264308,0,0,0.66264308,1536.8182,248.91624)">
         <g
            style="fill:#f9b4b4;fill-opacity:1"
            transform="translate(-6.2006925,220.12458)"
@@ -1664,7 +1638,7 @@
              style="font-weight:bold;stroke-width:1.21705"
              y="813.95001"
              x="320.83215"
-             sodipodi:role="line">2.1</tspan></text>
+             sodipodi:role="line">2.2</tspan></text>
         <g
            style="stroke-width:0.798601"
            id="g1310-5-1-7-6"
@@ -1688,7 +1662,7 @@
         </g>
       </g>
       <g
-         transform="matrix(0.66264308,0,0,0.66264308,1532.1548,248.67957)"
+         transform="matrix(0.66264308,0,0,0.66264308,1646.1235,109.87884)"
          id="g1715">
         <g
            id="g1697"
@@ -1717,12 +1691,12 @@
              y="876.13544"
              x="443.33124"
              sodipodi:role="line"
-             id="tspan1699">Non-verbal affective</tspan><tspan
+             id="tspan1699">Immersive teleoperation</tspan><tspan
              id="tspan1736"
              style="font-weight:bold;stroke-width:0.857392"
              y="919.00507"
              x="443.33124"
-             sodipodi:role="line">behaviours</tspan></text>
+             sodipodi:role="line">for non-verbal behaviours</tspan></text>
         <text
            inkscape:transform-center-y="3.9331769"
            inkscape:transform-center-x="7.8663573"
@@ -1735,7 +1709,7 @@
              x="320.83215"
              y="813.95001"
              style="font-weight:bold;stroke-width:1.21705"
-             id="tspan1703">2.2</tspan></text>
+             id="tspan1703">2.1</tspan></text>
         <g
            transform="matrix(0.66256319,0,0,0.66256319,29.602421,759.34715)"
            id="g1713"
@@ -1762,70 +1736,72 @@
       </g>
     </g>
     <g
-       transform="matrix(-0.8849229,-0.46573754,-0.46573754,0.8849229,952.94052,1511.858)"
-       id="g1838">
-      <path
-         sodipodi:nodetypes="cc"
-         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
-         inkscape:connector-curvature="0"
-         d="M 859.14569,34.555594 C 1015.5355,86.077435 1127.2213,92.796218 1276.4538,-31.075394"
-         id="path1830" />
-      <path
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
-         inkscape:connector-curvature="0"
-         d="m 1289.1418,-23.464841 11.2384,-36.964051 -32.369,21.092168 z"
-         id="path1832" />
-    </g>
-    <g
-       inkscape:transform-center-y="-24.231772"
-       inkscape:transform-center-x="32.007295"
-       transform="matrix(0.75424615,0.65659177,0.65659177,-0.75424615,-948.03889,503.06882)"
-       id="g1850">
-      <path
-         sodipodi:nodetypes="cc"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
-         inkscape:connector-curvature="0"
-         d="m 804.01374,705.25404 94.92571,69.66723"
-         id="path1846" />
-      <path
-         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt"
-         inkscape:connector-curvature="0"
-         d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
-         id="path1848" />
-    </g>
-    <g
        id="g1856"
        transform="matrix(0.99740004,0.07206359,0.07206359,-0.99740004,141.3728,1374.2237)"
        inkscape:transform-center-x="47.957154"
        inkscape:transform-center-y="22.743481">
       <path
          id="path1852"
-         d="m 619.64693,737.17436 c 112.69031,-35.08687 280.51053,36.74843 280.51053,36.74843"
+         d="M 619.64693,737.17436 C 720.16845,690.15755 818.05973,685.5564 818.05973,685.5564"
          inkscape:connector-curvature="0"
          style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
          sodipodi:nodetypes="cc" />
       <path
          sodipodi:nodetypes="cccc"
          id="path1854"
-         d="m 895.9097,786.43527 38.62555,-0.842 -30.1301,-24.183 z"
+         d="m 817.86014,699.2674 35.20381,-15.91647 -37.19857,-10.43584 z"
          inkscape:connector-curvature="0"
          style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
     </g>
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:31.8548px;line-height:1.25;font-family:'Open Sans';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.796371;stroke-linecap:square;stroke-miterlimit:10"
-       x="669.36615"
-       y="745.11737"
+       x="651.68988"
+       y="750.49438"
        id="text1166-3"><tspan
          sodipodi:role="line"
-         x="669.36615"
-         y="745.11737"
+         x="651.68988"
+         y="750.49438"
          style="font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.796371"
-         id="tspan1140-7">5- Ambitious</tspan><tspan
+         id="tspan1140-7">5. Ambitious</tspan><tspan
          sodipodi:role="line"
-         x="669.36615"
-         y="784.93585"
+         x="651.68988"
+         y="790.31287"
          style="font-style:normal;font-weight:bold;text-align:center;text-anchor:middle;stroke-width:0.796371"
-         id="tspan1185">experimental work</tspan></text>
+         id="tspan1185">field deployments</tspan></text>
+    <g
+       id="g1378"
+       transform="matrix(0.38325857,0.9236411,0.9236411,-0.38325857,-967.45155,317.74895)"
+       inkscape:transform-center-x="19.445067"
+       inkscape:transform-center-y="-38.928044">
+      <path
+         id="path1374"
+         d="m 837.28129,806.63576 c 5.02496,-59.8264 61.65816,-31.71449 61.65816,-31.71449"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="path1376"
+         d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
+    </g>
+    <g
+       id="g1157"
+       transform="rotate(127.08612,1218.1828,916.14118)"
+       inkscape:transform-center-x="-24.969594"
+       inkscape:transform-center-y="-35.685767">
+      <path
+         id="path1153"
+         d="m 837.28129,806.63576 c 5.02496,-59.8264 61.65816,-31.71449 61.65816,-31.71449"
+         inkscape:connector-curvature="0"
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt;stroke-linejoin:round"
+         sodipodi:nodetypes="cc" />
+      <path
+         id="path1155"
+         d="m 891.59796,785.908 37.52734,9.18372 -22.84442,-31.15723 z"
+         inkscape:connector-curvature="0"
+         style="fill:#000000;fill-rule:evenodd;stroke:#000000;stroke-width:8;stroke-linecap:butt" />
+    </g>
   </g>
 </svg>
