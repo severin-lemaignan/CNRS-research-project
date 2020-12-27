@@ -1409,8 +1409,7 @@ thoroughness of the ethical guidelines.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Underpinning the research: Developing methodological and technical
-excellence}
+\section{Developing methodological and technical excellence}
 
 Finally, I would like to sketch out my intended contributions to one key
 underpinning of my research programme: technical and methodological excellence.
@@ -1426,49 +1425,51 @@ autonomous social robots to the general public.
 \subsection{Advancing open-source software for HRI}
 
 As outlined in the presentation of my past contributions, I have a long academic
-track-record of technical open-source contributions to robotic software and
-algorithmic (for instance the \texttt{oro} knowledge
+track-record of technical open-source contributions to robotic algorithms and
+software; to name a few significant ones: the \texttt{oro} knowledge
 base~\autocite{lemaignan2010oro}, the natural language processing with semantic
 grounding tool \texttt{dialogs} \autocite{lemaignan2011grounding}, the 3D
 situation assessment platform
 \texttt{underworlds}~\autocite{lemaignan2018underworlds}, the LAAS architecture
-for social interaction~\autocite{lemaignan2017artificial}, or a new algorithm
-for interactive reinforcement learning~\autocite{senft2017supervised}).
+for social interaction~\autocite{lemaignan2017artificial}, or new algorithms
+for interactive reinforcement learning~\autocite{senft2017supervised}). I intend
+to pursue these efforts, also embracing and integrating novels techniques from
+neighbouring fields. Indeed, astonishing progress has been made over the past
+ten years in AI, largely due to the success of machine learning techniques to
+classify complex signals. As highlighted in the previous sections, I intend to
+fully embrace these techniques when and where relevant (for instance,
+\emph{social embeddings} to recognise complex social situations or generative
+networks to create on the fly complex social gestures).
 
-Astonishing progress has been made over the past ten years in AI, largely due to
-the success of machine learning techniques to classify complex signals. As
-highlighted in the previous sections, I intend to fully embrace these techniques
-when and where relevant (for instance, \emph{social embeddings} to recognise
-complex social situations or generative networks to create on the fly complex
-social gestures).
-
-However, one critical aspect of the technology that I want to investigate in
+One critical aspect of the technology that I want to investigate in
 depth is \textbf{real-world robustness}: indeed, many of the impressive
 achievements of machine learning do not hold well when applied to messy,
-real-world situations. This is however not an intrisic weakness of machine
-learning, but rather a lack of focus and experience with the more challenging
+real-world situations. While \emph{not} an intrinsic weakness of machine
+learning, it reflects a lack of focus and experience with the more challenging
 experimental conditions encountered when robots are deployed outside of the
 labs. As presented in Strand 5, I have an ambitious experimental programme,
 which will provide complex real-world data to train next-generation deep neural
-networks.
+networks, suitable for robust social perception and action generation.
 
 I will carry on this commitment to developing new software and algorithms with a
 special attention to the software engineering challenges that are often
-overlooked by academics and hamper dissemination: continuous integration,
-packaging, automated testing using simulation, deep integration with existing
-frameworks and standards (especially ROS). The LAAS-CNRS has a very strong
-tradition of software engineering (eg GenoM~\autocite{mallet2010genom3},
-\texttt{robotpkg}), and I hope to be able to build on and further develop this
-capacity.
+overlooked by academics and, as a result, hamper dissemination: for instance,
+continuous integration, packaging, automated testing using simulation, deep
+integration with existing frameworks and standards (especially ROS). The
+LAAS-CNRS has a very strong tradition of software engineering (eg.
+GenoM~\autocite{mallet2010genom3}, \texttt{robotpkg}), and I hope to be able to
+build on and further develop this capacity.
 
-The main goal of Strand 1 is to develop a novel approach to social situation
-assessement and understanding, and illustrates well the underlying technical
-complexity of software engineering in robotics. It effectively requires to
+The challenges raised by (the lack of) real-world robustness and software
+complexity are especially visible when building social perception pipelines (the
+main goal of my research strand 1). It effectively requires to
 combine together tenths of specialist software components into one coherent and
-principled framework, ensuring long-term compatibility while addressing
-practical issues like dependencies incompatibility. I have started this work
+principled framework, with algorithmic redundancy, and complex
+testing requirements. I have initiated this work
 (Figure~\ref{fig:ros4hri}, \TODO{arxiv paper}), with preliminary steps in place
-for multi-modal human modeling. I intend to continue this effort.
+for multi-modal human modeling. However, providing real-world robustness and overcoming
+training sets weaknesses and biases will be a long-term effort that I intend to
+spearhead as a CNRS researcher.
 
 \begin{figure}[ht]
     \centering
