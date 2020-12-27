@@ -82,7 +82,7 @@ social engagement~\parencite{yang2018grand,hoffman2019anki}
 
 Research is however seemingly hitting a wall to further progress towards
 socially meaningful long-term interactions. For instance, in their large review
-of research in robotics for education, Belpaeme et al.~\parencite{belpaeme2018social}
+of research in robotics for education, \textcite{belpaeme2018social}
 point to the shortcomings that prevent further development of effective,
 long-term social robotics in educative settings: the need for a correct
 interpretation of the social environment; the difficulty of action selection;
@@ -98,10 +98,10 @@ care centres~\parencite{hawes2017strands,winkle2020couch}) over relatively long
 periods of time (up to 2 or 3 months at a time). Even though these robots are
 typically not fully autonomous, they do exhibit a level of autonomy, either by
 handling autonomously a relatively broad range of shallow tasks (eg, a
-butler-like robot answering simple questions, like in~\parencite{hawes2017strands} or
+butler-like robot answering simple questions, like in~\textcite{hawes2017strands} or
 in the H2020 MuMMer~\parencite{heikkila2018can} and FP7
-Spencer~\parencite{triebel2016spencer} projects), or a narrow, well-specified complex
-task (for instance, supporting exercising in a gym, as I did in~\parencite{winkle2020couch}).
+Spencer project~\parencite{triebel2016spencer}), or a narrow, well-specified complex
+task (for instance, supporting exercising in a gym, as I did in~\textcite{winkle2020couch}).
 However, general purpose, long-term interaction is still an open question.
 
 
@@ -177,25 +177,29 @@ new research directions that promise to have a transformative impact on our
 digital future.
 
 \vspace{3em}
-\section{Methodology and approach to achieve impact}
+\section{Framing and objectives}
 
 The overall aim of my research programme is to \textbf{create, sustain and better
 understand the dynamics of responsible, long-term social human-robot
 interactions}. This translates into three overarching, long-term research questions:
 
-\paragraph{\bf RQ1:} What are the public expectations with respect to the role
-of social robots, and how can we collectively design principles ensuring
-responsible, beneficial, socially acceptable robots?
+\vspace{0.5em}
+\begin{itemize}
+    \item What are the public expectations with respect to the role
+        of social robots, and how can we \textbf{collectively design} principles ensuring
+        \textbf{autonomous}, yet \textbf{responsible, beneficial, socially acceptable robots}?
 
-\paragraph{\bf RQ2:} What are the conceptual, algorithmic and technical
-prerequisites to design and implement such an embodied AI? in particular, what
-AI is required to \textbf{sustain long-term engagement} between
-end-users and a robot?
+    \item What are the conceptual, algorithmic and technical
+        prerequisites to design and implement such an autonomous \& responsible
+        robots? in particular, what
+        AI is required to \textbf{sustain long-term engagement} between
+        end-users and a robot?
 
-\paragraph{\bf RQ3:} What new ethical questions are raised by long-term social
-interaction with an artificial agent, and in particular, how to balance
-\textbf{autonomy} of the robot with \textbf{behaviour transparency} and
-\textbf{human oversight}?
+    \item What new ethical questions are raised by long-term social
+        interaction with an artificial agent, and in particular, how to balance
+        \textbf{autonomy} of the robot with \textbf{behaviour transparency} and
+        \textbf{human oversight}?
+\end{itemize}
 
 \vspace{0.5em}
 \noindent From these questions, I derive the following five objectives that are
@@ -210,22 +214,20 @@ must form the foundations of a socially useful robot, accepted and used in the
 long run.  Using user-centred design and participatory design methodologies, I
 will identify the determinants and parameters of a responsible social
 intervention, performed by a socially-driven robot, and formalise them in
-guidelines.
+practical recommandations.
 
 \paragraph{\bf O2: real-time social modeling} To create the novel cognitive
-capability of artificial \emph{social situation assessment} and enabe the
+capability of artificial \emph{social situation assessment} and enable the
 robot to represent real-time social dynamics in its environment, I will
 significantly extend and integrate the current state-of-art in spatio-temporal
 modeling (so-called \emph{situation assessment}) with my recent research in social
-state modeling.
+state modeling, exploring as well novel avenues like \emph{social embeddings}.
 
 \paragraph{\bf O3: congruent social behaviours production} 
 To create a novel way of producing non-repetitive, socially-congruent,
-expressive motions using the state of the art in generative neural networks,
-combined with data acquired from an expert choreographer. This will be
-integrated with novel \emph{sound landscapes} to create a beyond-state-of-art,
-non-verbal (yet highly expressive) action and communication system for the
-robot.
+expressive behaviours. This will include for instance expressive social motions using
+state-of-the-art generative neural networks to co-invent with choreographers
+a novel `body language' for robots.
 
 \paragraph{\bf O4: embodied AI breakthrough} To create robot behaviours that are
 perceived as purposeful and intentional (long-term goals), while being shaped by
@@ -528,7 +530,7 @@ and will exploit the natural interaction data collected in Strand 5.
 From modelling the human, I will then investigate automatic understanding and
 modelling of group-level social interactions~\parencite{tapus2019perceiving},
 including $f$-formations~\parencite{marshall2011using}, sociograms (as done
-in~\parencite{garcia2016hybrid} for instance), and inter-personal
+in~\textcite{garcia2016hybrid} for instance), and inter-personal
 affordances~\parencite{pandey2013affordance}. This task builds on literature on
 on social dynamics analysis
 (eg~\parencite{durantin2017social,jermann2009physical, martinez2019collocated})
@@ -545,12 +547,6 @@ interaction.
 
 \subsubsection{1.2 -- Social situation assessment}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=\linewidth]{pipeline}
-    \caption{Overview of the 'ROS4HRI' pipeline that I currently develop.}
-    \label{fig:ros4hri}
-\end{figure}
 
 In 1.2, I integrate the social
 cues from 1.1 with traditional situation assessment platforms. It will
@@ -562,7 +558,7 @@ from social signal perception (like automatic attention tracking, face
 recognition, sound localisation, etc.) to higher-level socio-cognitive
 constructs, including group dynamics and perspective
 taking~\parencite{flavell1992perspectives} (as I previously framed
-in~\parencite{lemaignan2015mutual, dillenbourg2016symmetry}).
+in~\textcite{lemaignan2015mutual, dillenbourg2016symmetry}).
 
 \begin{outcome}{1.2}
 A novel cognitive sub-system for social
@@ -579,10 +575,10 @@ A novel cognitive sub-system for social
 One of the key novel scientific idea that I will research in this workpackage is
 the construction of the \textbf{social embedding} of the robot:
 a compact, low-dimensional representation of the full social environment,
-inspired from word embeddings (eg.~\parencite{mikolov2013distributed}). If fruitful,
+inspired from word embeddings (eg.~\textcite{mikolov2013distributed}). If fruitful,
 this approach would significantly simplify the application of neural networks to
 automatically recognise social situations and social dynamics (something notoriously difficult
-to achieve with the current state-of-art~\parencite{bartlett2019what}), and
+to achieve with the current state-of-art~\autocite{bartlett2019what}), and
 potentially \emph{generate} plausible social situations, that the robot could
 use to eg. predict the next states of an interaction.
 
@@ -596,10 +592,9 @@ The investigation of \emph{social
 
 In complement to the large-scale experimental work described in Strand 5, a focused experimental programme accompanies Strand 1, to demonstrate (in relative
 isolation) the resulting socio-cognitive capabilities. I will implement a subset
-of the experimental protocols identified by Frith and
-Happé~\parencite{frith1994autism} to investigate theory of mind with autistic
+of the experimental protocols identified by~\textcite{frith1994autism} to investigate theory of mind with autistic
 children, as it offers an excellent experimental framework for social
-robotics, as I argued in~\parencite{lemaignan2015mutual}.
+robotics, as I argued in~\textcite{lemaignan2015mutual}.
 
 Indeed, experimental protocols in research on autistic spectrum disorders are often
 striking by their apparent straightforwardness because of the careful choice of
@@ -630,17 +625,17 @@ architecture.
         \toprule
         No mentalizing required           & Mentalizing required          \\
         \midrule
-        Ordering behavioural pictures     & Ordering mentalistic pictures\parencite{baron1986mechanical} \\
-        Understanding see                 & Understanding know\parencite{perner1989exploration}            \\
-        Protoimperative pointing          & Protodeclarative pointing\parencite{baron1989perceptual}     \\
-        Sabotage                          & Deception\parencite{sodian1992deception}                     \\
-        False photographs                 & False beliefs\parencite{leslie1992domain}                 \\
-        Recognizing happiness and sadness & Recognizing surprise\parencite{baron1993children}          \\
-        Object occlusion                  & Information occlusion\parencite{baron1992out}         \\
-        Literal expression                & Metaphorical expression\parencite{happe1993communicative}       \\
+        Ordering behavioural pictures     & Ordering mentalistic pictures~\parencite{baron1986mechanical} \\
+        Understanding see                 & Understanding know~\parencite{perner1989exploration}            \\
+        Protoimperative pointing          & Protodeclarative pointing~\parencite{baron1989perceptual}     \\
+        Sabotage                          & Deception~\parencite{sodian1992deception}                     \\
+        False photographs                 & False beliefs~\parencite{leslie1992domain}                 \\
+        Recognizing happiness and sadness & Recognizing surprise~\parencite{baron1993children}          \\
+        Object occlusion                  & Information occlusion~\parencite{baron1992out}         \\
+        Literal expression                & Metaphorical expression~\parencite{happe1993communicative}       \\
         \bottomrule
     \end{tabular}
-    \caption{\small Tasks requiring or not mentalizing to pass, listed by Frith and Happé in\parencite{frith1994autism}}
+    \caption{\small Tasks requiring or not mentalizing to pass, listed by~\textcite{frith1994autism}}
     \label{mentalizing-tasks}
 \end{table}
 
@@ -700,12 +695,12 @@ non-verbal utterances using sounds, gaze, joint attention).
 
 This strand of research will build upon the long expertise of the LAAS-CNRS on
 developing social robots interacting with humans in complex
-environments~\cite{Lallement2014,gharbi2013natural,
+environments~\autocite{Lallement2014,gharbi2013natural,
 waldhart2015planning}\TODO{add additional/better references}, as well as the
 existing literature on current behaviour generation methodologies, covering
-techniques like curiosity-driven behaviours\parencite{oudeyer2005playground},
-Learning from Demonstration\parencite{billard2008robot, argall2009survey},
-human-in-the-loop action policy learning\parencite{senft2016sparc,
+techniques like curiosity-driven behaviours~\parencite{oudeyer2005playground},
+Learning from Demonstration~\autocite{billard2008robot, argall2009survey},
+human-in-the-loop action policy learning~\autocite{senft2016sparc,
 senft2019teaching}.
 
 \begin{collaboration}{Nicholas Asher, IRIT, ANITI}
@@ -733,7 +728,7 @@ investigating new forms of sound expressions like soundscapes with sound
 experts: soundscapes are about creating a sound environment that reflects a
 particular situation; they also have been shown to be an effective intervention
 technique in the context special needs treatments
-(eg~\parencite{greher2010soundscape}). The soundscapes that we will research and
+(eg~\textcite{greher2010soundscape}). The soundscapes that we will research and
 create, are `owned' by the robot, and it can manipulate it itself, eg to create
 an approachable, non-threatening, non-judgmental, social interaction context, or
 to the establish the interaction into a trusted physical and emotional
@@ -835,7 +830,7 @@ I have shown with my students promising results for generating complex social
 behaviours~\parencite{senft2019teaching, winkle2020insitu} that fully involve
 the end-users~\parencite{winkle2018social}.
 
-In~\parencite{suguitan2020moveae}, a Generative Adversarial Network (GAN) is
+In~\textcite{suguitan2020moveae}, a Generative Adversarial Network (GAN) is
 trained to generate expressive motions; the generation being modulated by a
 feature encoding an emotion. I will extend this idea in two ways: (1) I will
 train the GAN on multiple interaction modalities (motions, but also facial
@@ -1291,8 +1286,9 @@ interactions, aimed at informing future policy making.
 
 \subsection{Strand 5: \textbf{\wpFive}}
 
-I have the ambition to demonstrate long-term, co-designed social
-interactions in two complex, socially sensitive spaces.
+I intend to scaffold and demonstrate the results of my research with an
+ambitious experimental programme, itsefl underpinned by technical excellence.
+
 
 
 \subsubsection{5.1 -- Crowd-sourced patterns of robot-supported social
@@ -1306,7 +1302,7 @@ crowd-sourcing'. For one year, in close partnership with local institutions
 teleoperate my robots, with the objective of interacting and assisting
 other visitors. The participants will remotely control the robot through a
 tablet interface (similar to the setup I created
-for~\parencite{senft2019teaching} and~\parencite{winkle2020insitu}), and
+for~\textcite{senft2019teaching} and~\textcite{winkle2020insitu}), and
 interviews of both the teleoperators and the visitors interacting with the robot
 will be conducted in parallel, collecting in a structured manner the interaction
 patterns and social norms that will emerge over the course of the study.
@@ -1379,6 +1375,187 @@ our social relationships.
 Importantly, these deployments would take place within the strict ethical framework
 established in Strand 4, providing real-world feedback on the suitability and
 thoroughness of the ethical guidelines.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Underpinning the research: Developing methodological and technical
+excellence}
+
+Finally, I would like to sketch out my intended contributions to one key
+underpinning of my research programme: technical and methodological excellence.
+Indeed, it is important to re-state here the fundamental nature of my project:
+\textbf{the development of novel, fully autonomous, social robots, able to
+foster long-term interactions}. This aim is beyond the state of the art, and
+while ambitious science is required to achieve it, \textbf{technical excellence
+is the fundamental enabler}. I am excited about such a major technical
+challenge, and following on from my strong technical track-record, I will
+innovate to build and assemble the leading technology required to bring
+autonomous social robots to the general public.
+
+\subsection{Advancing open-source software for HRI}
+
+As outlined in the presentation of my past contributions, I have a long academic
+track-record of technical open-source contributions to robotic software and
+algorithmic (for instance the \texttt{oro} knowledge
+base~\autocite{lemaignan2010oro}, the natural language processing with semantic
+grounding tool \texttt{dialogs} \autocite{lemaignan2011grounding}, the 3D
+situation assessment platform
+\texttt{underworlds}~\autocite{lemaignan2018underworlds}, the LAAS architecture
+for social interaction~\autocite{lemaignan2017artificial}, or a new algorithm
+for interactive reinforcement learning~\autocite{senft2017supervised}).
+
+Astonishing progress has been made over the past ten years in AI, largely due to
+the success of machine learning techniques to classify complex signals. As
+highlighted in the previous sections, I intend to fully embrace these techniques
+when and where relevant (for instance, \emph{social embeddings} to recognise
+complex social situations or generative networks to create on the fly complex
+social gestures).
+
+However, one critical aspect of the technology that I want to investigate in
+depth is \textbf{real-world robustness}: indeed, many of the impressive
+achievements of machine learning do not hold well when applied to messy,
+real-world situations. This is however not an intrisic weakness of machine
+learning, but rather a lack of focus and experience with the more challenging
+experimental conditions encountered when robots are deployed outside of the
+labs. As presented in Strand 5, I have an ambitious experimental programme,
+which will provide complex real-world data to train next-generation deep neural
+networks.
+
+I will carry on this commitment to developing new software and algorithms with a
+special attention to the software engineering challenges that are often
+overlooked by academics and hamper dissemination: continuous integration,
+packaging, automated testing using simulation, deep integration with existing
+frameworks and standards (especially ROS). The LAAS-CNRS has a very strong
+tradition of software engineering (eg GenoM~\autocite{mallet2010genom3},
+\texttt{robotpkg}), and I hope to be able to build on and further develop this
+capacity.
+
+The main goal of Strand 1 is to develop a novel approach to social situation
+assessement and understanding, and illustrates well the underlying technical
+complexity of software engineering in robotics. It effectively requires to
+combine together tenths of specialist software components into one coherent and
+principled framework, ensuring long-term compatibility while addressing
+practical issues like dependencies incompatibility. I have started this work
+(Figure~\ref{fig:ros4hri}, \TODO{arxiv paper}), with preliminary steps in place
+for multi-modal human modeling. I intend to continue this effort.
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=\linewidth]{pipeline}
+    \caption{Overview of the 'ROS4HRI' framework\TODO{Add arxiv paper} that I originally designed, and
+    whose development I lead.}
+    \label{fig:ros4hri}
+\end{figure}
+
+\subsection{Future-proofing robotic platforms for interaction}
+
+My research programme focuses on the \ul{AI engine} of social robot, rather than
+eg hardware development. As such, my work relies on pre-existing platforms,
+suitable for social human-robot interactions.
+
+The LAAS-CNRS, as a potentially host laboratory, has created and owns a solid
+set of mobile platforms for interaction: two WillowGarage PR2, SoftBank Peppers,
+bespoke dual manipulators\TODO{what else?}
+
+However, looking specifically at human-sized mobile manipulators with advanced
+social features, the choice of robotic platforms is in effect limited.  The two
+leading mobile social robots available on the market today, SoftBank Pepper and
+PAL TiaGo (along with the Fetch Mobile Manipulator, which is functionally
+similar to PAL's TiaGo) are 5+ years old design. While they have played an
+important role in supporting research in HRI over the past years, they do not
+reflect the current state of the art in social mobile manipulators (see
+Table~\ref{robot-comparison}), and as a CNRS researcher, I will seek internal
+and/or external funding to acquire state-of-the-art platforms like the HALODI
+Eve or the IIT R1 (Figure~\ref{fig:selfbalancingrobots}), eg via joint
+applications to EU funding.
+
+
+\begin{table}[h!]
+    \caption{Comparison of HALODI Eve robot with PAL TiaGo and
+    Softbank Pepper. HALODI Eve (and similarly IIT R1) is a compliant mobile
+    dual manipulator with advanced social interaction capabilities.}
+
+    \resizebox{\linewidth}{!}{
+    \begin{tabular}{@{}p{3cm}p{5cm}p{5cm}p{5cm}@{}}
+\toprule
+                                           & PAL TiaGo                                                & Softbank Pepper                                                           & \textbf{HALODI Eve}                                                                                                                              \\ \midrule
+\textbf{Social features}                   & Poor (non-expressive head)                               & Expressive, yet fixed, face; limited gaze; approachable & Screen-based expressive face, incl. eyes; approachable \\
+\textbf{Perception}                        & Medium (RGB-D camera; laser scanner; no microphone)      & Medium (RGB-D; simple mic array; poor laser scanner)                      & Excellent (SotA RGB-D; 7-mic array; laser scanner)                                                                                                   \\
+\textbf{Navigation}                        & Good (however, limited agility due to large footprint)   & Poor (weak localisation capabilities)                                     & Good (high agility due to Segway-like self-balancing)                                                                                                   \\
+\textbf{Safety}                            & Medium (heavy robot; large footprint; non-compliant arm) & Medium (smaller footprint; safe arms; limited stability)                  & Good (small footprint; safe arms; dynamic stability)                                                                                       \\
+\textbf{Manipulation capabilities}         & Medium (non-anthropomorphic gripper; single arm)         & Limited (poor gripper with low payload; dual arm)                         & Good (anthropomorphic gripper; pressure sensors; dual arm)                                                                    \\
+\textbf{Suitability for human environments} & Poor (relatively large, difficult to clean)              & Good (smaller footprint, easy to clean)                                   & Good (small footprint, easy to clean)                                                                                                      \\ \bottomrule
+\end{tabular}
+}
+    \label{robot-comparison}
+\end{table}
+
+
+\begin{figure}[ht]
+    \centering
+    \includegraphics[width=0.5\linewidth]{self-balancing-robots}
+    \caption{Two examples of state-of-the-art self-balancing robots designed for
+    agile and safe social interaction.  Left:
+    \href{https://www.halodi.com/ever3}{HALODI Eve r3}; Right: IIT
+    R1~\parencite{parmiggiani2017design}. These robots are designed with
+   compliant actuation, supporting safe interaction with humans. Their small
+    footprint and 'on-the-spot' rotation make them especially
+   well-suited for interaction in complex real-world human environments.}
+    \label{fig:selfbalancingrobots}
+\end{figure}
+
+\subsection{Open science best practices}
+
+Finally, I see fostering \textbf{open science best practices} as a cornerstones
+of technical and methodological excellence. I am a long-standing open science
+proponent and I have led a number of targeted actions to further develop these
+practices: the publication and an analysis of the current practices and
+recommandations in field of human-robot
+interaction~\autocite{baxter2016characterising}; the publication of large open
+datasets~\autocite{childrenspeech2016, pinsoro2018, lemaignan2018pinsoro}; open
+access publishing; a large corpus of open-source contributions
+(\href{https://github.com/severin-lemaignan}{180+ public repositories on
+Github}), including key contributions to major research software like ROS (I led
+the port of ROS to Python3); active and open engagement with the wider community
+via social media.
+
+More can be done, however, and as a CNRS researcher, I would commit to further
+enhance the 
+
+I will leverage my editorial role in high-profile publications and
+conferences (most notably FrontiersIn Robotics and AI, and the ACM/IEEE
+Human-Robot Interaction conference) to advance this agenda.
+
+\begin{itemize}
+    \item \textbf{reproducible science} by always providing the code and data
+        analysis scripts used in experiments;
+    \item \textbf{pre-registered studies} where the exact methodology is
+        published \emph{before} performing the study itself, ensuring the
+        highest standard of experimental rigour;
+    \item \textbf{continued lobbying} in international academic venues to
+        support and foster open-science best practices, in particular by opening
+        the Human-Robot Interaction conference to pre-registered studies
+\end{itemize}
+
+\TODO{finish section}
+
+\begin{outcome}{5.1}
+A asserted technical excellence, with continual contributions to the technical
+state-of-the-art in social robots.
+
+This commitment will be evidenced throught:
+    \begin{itemize}
+        \item continuous engagement and leadership within the open-source
+            robotic community;
+        \item creation and leadership of the `ROS4HRI' community, 
+    \end{itemize}
+
+\end{outcome}
+
 
 
 %\subsubsection{Experimental approach}
@@ -1858,7 +2035,6 @@ thoroughness of the ethical guidelines.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\TODO{do I re-introduce a risk assessment section?}
 %\section{Risk/gain assessment; risk mitigations}\label{risks}
 %
 %\textbf{Tasks 1.1, 1.2} develop a novel methodology, `public-in-the-loop' machine

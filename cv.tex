@@ -162,8 +162,82 @@ autonomous social
 robots~\cite{lemaignan2017artificial,winkle2020insitu}.
 
 
-
 \section{Contributions to the generation of knowledge}
+
+\subsection{Technical contributions}
+
+Since 2010, I have made a number of significant technical contribution to the
+field. I have always adopted a open-science approach, releasing all of the
+software contribution to the wider community.
+
+I list hereafter the most significant software packages (typically the one with an
+associated publication), followed by additional noteworthy technical
+contributions.
+
+\begin{itemize}
+    \item the \texttt{oro} knowledge base~\autocite{lemaignan2010oro} --
+        this high-cited work introduced the usage of ontologies (and linked techniques like semantic
+        reasoning) in robotics.
+
+    \item the natural language processing with semantic grounding tool
+        \texttt{dialogs}~\autocite{lemaignan2011grounding} -- this other
+        highly-cited tool demonstrated how natural language and interactive
+        semantic learning could be realised by combining semantic reasoning with
+        advanced human perception.
+
+    \item the \texttt{MORSE} simulator~\autocite{echeverria2011morse,
+        lemaignan2012morse}, one of the very first simulator enabling
+        human-robot interaction simulation, and used by tenths of universities
+        worldwide since its inception.
+
+    \item the GenoM verifiable software module
+        generator~\autocite{mallet2010genom3} -- this tool makes it possible to
+        abstractly specify a robotic module, and automatically generate a code
+        skeleton whose behaviour can be proven correct.
+
+    \item the Python-based \texttt{pyRobots} asynchronous supervision
+        framework~\autocite{lemaignan2015pyrobots} -- adapted some of the concepts
+        orginally created in the URBI language to Python, making it possible to
+        easily write asynchronous supervisors for robots using eg ROS.
+
+    \item integration of the LAAS architecture for social
+        robots~\autocite{lemaignan2017artificial} -- I coordinated the effort of
+        a large team of researchers at LAAS to integrate a significant number of
+        software modules in a coherent architecture for social interaction. One
+        of my most-cited paper.
+
+    \item a high-accuracy 2D localisation method based on structured
+        patterns~\autocite{hostettler2016realtime} -- I supervised this work
+        in which we attempted to address the difficult issue of high-accuracy
+        indoor localisation in complex, highly-occluded environment. Our method,
+        which relies on decoding structured patterns placed in the environment,
+        allows for sub-mm localisation with very low computational cost (can
+        fully run on a microcontroller)
+
+    \item the 3D situation assessment platform
+        \texttt{underworlds}~\autocite{lemaignan2018underworlds} -- this tool
+        is a distributed scene-graph, making it possible to maintain a joint
+        dynamic 3D model of environment across software modules. It features
+        sensor fusion, and spatial reasoning capabilities like perspective
+        taking.
+
+    \item a new algorithm for interactive reinforcement
+        learning~\autocite{senft2017supervised} -- the algorithm, developed by
+        one of my student, has enabled for the first to to teach a robot both a
+        task and a social action policy \emph{while being in use in the field}.
+        We were able to show that after a short training phase, the robot was
+        able to reach fully autonomy on a complex educative task.
+\end{itemize}
+
+     a review of object recognition
+techniques~\autocite{wallbridge2017qualitative}, 
+
+\begin{itemize}
+    \item Python3 ROS port
+    \item initial port of the Nao robot to ROS
+    \item port of the HOAP-3 humanoid robot to ROS
+\end{itemize}
+
 
 \subsection{Selected scientific outputs}
 
