@@ -573,14 +573,32 @@ A novel cognitive sub-system for social
 \subsubsection{1.3 -- Social embeddings}
 
 One of the key novel scientific idea that I will research in this workpackage is
-the construction of the \textbf{social embedding} of the robot:
-a compact, low-dimensional representation of the full social environment,
-inspired from word embeddings (eg.~\textcite{mikolov2013distributed}). If fruitful,
-this approach would significantly simplify the application of neural networks to
-automatically recognise social situations and social dynamics (something notoriously difficult
-to achieve with the current state-of-art~\autocite{bartlett2019what}), and
-potentially \emph{generate} plausible social situations, that the robot could
-use to eg. predict the next states of an interaction.
+the construction of a meaningful \textbf{social embedding} for the robot.
+\emph{Embeddings}, in machine learning, are compact, low-dimensional
+representation of a much more complex phenomenon. Well-known examples of such embeddings
+include \emph{word embeddings} (eg.
+\emph{word2vec}~\autocite{mikolov2013distributed} or \emph{GloVe}~\autocite{pennington2014glove}) where
+words are projected into a $n$-dimensional space (with eg. $n = 300$ in the case
+of \emph{GloVe}). Such an embedding can be constructed such as Euclidian
+distance in the embedding reflects semantic distance in the word-space, making
+it computationally inexpensive to represent and manipulate words' semantics.
+
+I believe a similar approach could be devised for social interactions:
+constructing a low-dimensional embedding onto which social situations can be
+projected while they are perceived by the robot.
+Note that the additional complexity introduced by the dynamic nature of the interaction
+(ie, a social situation needs to be observed for some time to be correctly
+interpreted) can be overcome using for instance a transformer
+architecture~\autocite{vaswani2017attention}, as done for action recognition
+in eg.~\textcite{girdhar2019video}.
+
+
+If fruitful, this approach would significantly simplify the application of
+neural networks to automatically recognise social situations and social dynamics
+(something notoriously difficult to achieve with the current
+state-of-art, as I discuss in~\textcite{bartlett2019what}), and potentially \emph{generate}
+plausible social situations, that the robot could use to eg. predict the next
+states of an interaction.
 
 \begin{outcome}{1.3}
 The investigation of \emph{social
@@ -1287,7 +1305,11 @@ interactions, aimed at informing future policy making.
 \subsection{Strand 5: \textbf{\wpFive}}
 
 I intend to scaffold and demonstrate the results of my research with an
-ambitious experimental programme, itsefl underpinned by technical excellence.
+ambitious experimental programme. This experimental programme is two-fold:
+(1) informing the design of desirable social robots, by creating a 'crowd-scale'
+methodology to co-design and co-construct the robots' social role and
+behaviours; (2) demonstrating meaningful progress on robot-supported social
+interventions, in complex and high-impact real-world environments.
 
 
 
@@ -1297,23 +1319,24 @@ interactions}
 In order to broadly engage the public with defining what future robots should do
 to be perceived as responsible, beneficial, and engaging, I intend to create and
 deploy a novel investigation methodology that I term `experimental
-crowd-sourcing'. For one year, in close partnership with local institutions
-(like Toulouse's "Le Quai des Savoirs"), the general public will be invited to
-teleoperate my robots, with the objective of interacting and assisting
-other visitors. The participants will remotely control the robot through a
-tablet interface (similar to the setup I created
-for~\textcite{senft2019teaching} and~\textcite{winkle2020insitu}), and
-interviews of both the teleoperators and the visitors interacting with the robot
-will be conducted in parallel, collecting in a structured manner the interaction
-patterns and social norms that will emerge over the course of the study.
-Additional focus groups will be organised with the public to reflect and
-iterate on these principles.
+crowd-sourcing'. 
+For a whole year, and in close partnership with local institutions
+(like Toulouse's "Le Quai des Savoirs"), I will deploy the laboratory's robot(s)
+within a public space, relinquishing its
+control to the visitors themselves. Tasked with remotely operating the robot to
+assist fellow visitors, a researcher will accompany them in `inventing by doing' a new
+grammar of social interactions to develop answers to the questions: what does it
+mean for a robot to help? How to do so in the dynamic, messy, public
+environments? What are acceptable behaviours? Can we see new social norms
+emerge? At the end of this experiment, we expect 1000s of people to have
+experienced -- and co-designed -- how robots should interact with humans in a
+positive, helpful way. Each of these experiences will contribute to uncovering
+and designing the basic principles of social interaction for robots.
 
-\TODO{finish that}
-During the duration of the study, one researcher will be permanently based at
-the science museum, and the museum staff themselves will be trained to
-communicate about the aims of the study. Anonymous interaction data (eg, body
-postures) will be collected as well, and feed into WP2 and WP3.
+This work will be based on my previous research on 'human in the loop' machine
+learning~\autocite{senft2019teaching,winkle2020insitu}, while scaling it up both
+in term of duration (several months) and volume of input (hundreds of
+participants).
 
 \begin{collaboration}{Toulouse Science Centre \emph{Le Quai des Savoirs}
     \newline \& local science charities}
@@ -1343,6 +1366,8 @@ where robots are used by non-experts in ecologically valid environments. When
 conducted with the highest standards of scientific rigour, these
 deployments provide invaluable insights on the actual challenges that prevent
 broader acceptance and use of robots in the society.
+
+
 
 In the first 5 years of starting my role at CNRS, I would strive to demonstrate
 my approach with two such ambitious field experiments.
@@ -1542,20 +1567,6 @@ Human-Robot Interaction conference) to advance this agenda.
 \end{itemize}
 
 \TODO{finish section}
-
-\begin{outcome}{5.1}
-A asserted technical excellence, with continual contributions to the technical
-state-of-the-art in social robots.
-
-This commitment will be evidenced throught:
-    \begin{itemize}
-        \item continuous engagement and leadership within the open-source
-            robotic community;
-        \item creation and leadership of the `ROS4HRI' community, 
-    \end{itemize}
-
-\end{outcome}
-
 
 
 %\subsubsection{Experimental approach}
