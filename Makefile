@@ -1,4 +1,4 @@
-TARGETS=project.tex
+TARGETS=project.tex academic-track-record.tex
 BIBS=biblio.bib my-publications.bib mutual-modelling.bib
 
 SOURCE = $(wildcard *.tex)
