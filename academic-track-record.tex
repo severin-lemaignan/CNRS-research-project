@@ -8,7 +8,7 @@
 \usepackage{framed}
 
 %\usepackage[style=authoryear]{biblatex}
-\usepackage[sorting=none,style=numeric,maxcitenames=2,giveninits=true]{biblatex}
+\usepackage[sorting=none,style=numeric,maxnames=10,maxcitenames=2,giveninits=true]{biblatex}
 
 %\usepackage[maxbibnames=19, maxcitenames=2,firstinits=true]{biblatex}
 %\usepackage[style=authoryear,babel=hyphen,backend=biber]{biblatex}
@@ -81,6 +81,14 @@
 %\newcommand{\epsrc}[1]{}
 \newcommand{\epsrc}[1]{{\color{teal}\textbf{Guidelines EPSRC: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
+
+
+\newcommand{\paper}[4]{\begin{framed}%
+\begin{tabular}{p{1.7cm}p{10cm}}%
+    \vspace{-.20cm}\includegraphics[height=2.3cm]{thumbs/#1} & #2 \\
+    \multicolumn{2}{p{13cm}}{\vspace{0.1cm}#3\newline\emph{[Contribution: #4]}}%
+\end{tabular}%
+\end{framed}}
 
 
 \newenvironment{collaboration}[1]
