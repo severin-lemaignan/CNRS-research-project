@@ -83,12 +83,12 @@
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
 
-\newcommand{\paper}[4]{\begin{framed}%
+\newcommand{\paper}[4]{\begin{leftbar}%
 \begin{tabular}{p{1.7cm}p{10cm}}%
-    \vspace{-.20cm}\includegraphics[height=2.3cm]{thumbs/#1} & #2 \\
+    \vspace{-.20cm}\includegraphics[height=2.3cm]{thumbs/#1} & \vspace{0.1cm} #2 \\
     \multicolumn{2}{p{13cm}}{\vspace{0.1cm}#3\newline\emph{[Contribution: #4]}}%
 \end{tabular}%
-\end{framed}}
+\end{leftbar}}
 
 
 \newenvironment{collaboration}[1]
