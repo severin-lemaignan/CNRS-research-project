@@ -82,12 +82,22 @@
 \newcommand{\epsrc}[1]{{\color{teal}\textbf{Guidelines EPSRC: #1}}}
 \newcommand{\cellgrey}{\cellcolor[gray]{0.85}}
 
+\usepackage{eso-pic, rotating, graphicx}
 
-\newcommand{\paper}[4]{\begin{leftbar}%
+
+
+\newcommand{\paper}[5]{
+    \definecolor{shadecolor}{gray}{0.95}
+\begin{leftbar}%
+\begin{shaded}%
+% vertical text
+%\hspace{-1.5cm}\rotatebox{90}{\hspace{-2cm}Paper~\autocite{#1}}
+%{\noindent\bf Publication~\autocite{#1}}\\
 \begin{tabular}{p{1.7cm}p{10cm}}%
-    \vspace{-.20cm}\includegraphics[height=2.3cm]{thumbs/#1} & \vspace{0.1cm} #2 \\
-    \multicolumn{2}{p{13cm}}{\vspace{0.1cm}#3\newline\emph{[Contribution: #4]}}%
+    \vspace{-.20cm}\includegraphics[height=2.3cm]{thumbs/#2} & \vspace{0.1cm} #3 \\
+    \multicolumn{2}{p{13cm}}{\vspace{0.1cm}#4\newline\emph{[Contribution: #5]}}%
 \end{tabular}%
+\end{shaded}
 \end{leftbar}}
 
 
