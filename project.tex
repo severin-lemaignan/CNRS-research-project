@@ -97,7 +97,8 @@
 }
 
 \newenvironment{outcome}[1]
-{\begin{framed}
+{\vspace{1em}\noindent\begin{minipage}{\linewidth}
+\begin{framed}
 %\marginpar{#1}
 %[RGB]{214,141,0}{251,240,220}
 \begin{wrapfigure}[1]{l}{0.5cm}
@@ -105,9 +106,9 @@
 	\includegraphics[width=0.5cm]{outcome.pdf}
 \end{wrapfigure}
 \vspace{4pt}
-\noindent\textbf{Research strand #1 -- targeted outcomes}\\[0.6em]
+\noindent\textbf{Research strand #1 -- targeted contributions}\\[0.6em]
 }
-{\end{framed}
+{\end{framed}\end{minipage}
 }
 
 

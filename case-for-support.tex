@@ -369,31 +369,6 @@ researching and developing the socio-cognitive principles, or \emph{drives}, of
 the architecture. They will be identified both from the 'public-in-the-loop'
 research and end-user engagement conducted in \textbf{Strand 4}, and an novel
 research on intrinsic social motivation that I detail below.
-%
-%
-%\begin{figure}[h!]
-%\centering
-%\includegraphics[width=\linewidth]{figs/archi}
-%\caption{Contributions of my research strands to the AI architecture at the core
-%    of the research programme. Some capabilities already developed at the host
-%    lab (grey blocks) will directly contribute to the practical realisation of autonomy.}
-%\label{fig:archi}
-%\end{figure}
-%
-%Figure~\ref{fig:archi} illustrates what this architecture could look like.
-%Strand 1 (top) focuses on creating a novel, integrated model of the social
-%environment of the robot; it will build on the current state of art in spatial
-%modeling, semantic modeling and interaction history representation, and augment
-%it with representations of the social dynamics around the robot, introducing the
-%idea of \emph{social embeddings}. Strand 2 (bottom) significantly improve upon
-%techniques for non-repetitive, socially-congruent behaviour production,
-%combining behaviour design and data acquisition using immersive teleoperation
-%with recent advances in generative neural nets. Strand 3 (centre) integrates the
-%robot cognitive capabilities in a new cognitive architecture for long-term
-%social autonomy. It introduces a novel arbitration mechanism between action
-%policies, to enable both long-term, goal-driven autonomous behaviours, and
-%direct in-situ learning from the robot's end-users, to ensure transparency and
-%human oversight.
 
 
 The following sections describe in greater detail each of these research
@@ -532,8 +507,9 @@ states of an interaction.
 
 \begin{outcome}{1.3}
 The investigation of \emph{social
-    embeddings} as a general, sub-symbolic representation of the social
-    environment of interactive robots.
+embeddings} as a general, sub-symbolic representation of the social
+environment of interactive robots. This would unlock the widespread use of
+machine learning techniques to investigate social AI.
 \end{outcome}
 
 \subsubsection{Focused experimental programme}
@@ -728,50 +704,47 @@ The research, development and
 Designing behaviours that enable sustained, long-term engagement in a social
 human-robot interaction is essentially an open research question. The specific
 challenge of producing non-repetitive social behaviours is particularly
-difficult: social robots typically rely on \emph{off-the-shelf behaviours},
-where the robot effectively picks from a set library of behaviours (that might
-be individually relatively complex). The approach can elicit a strong initial
-social response from the user, but this social response tends to vanish rapidly
-once the `tricks' of the robot have been all discovered and become repetitive.
-Besides, as the robot does not typically maintain a long-term socio-cognitive
-plan of the interaction, the behaviours are typically perceived as fun, yet
-pointless, leading to disengagement. This is often observed in toy-like robots
-(eg Vector, Dot \& Dash)~\parencite{hoffman2019anki}.
+difficult: social robots typically rely on off-the-shelf behaviours,
+where the robot effectively picks from a set library of pre-programmed
+behaviours. The approach can elicit a strong initial social response from the
+user, but this social response tends to vanish rapidly once the `tricks' of the
+robot have been all discovered and become
+repetitive~\autocite{lemaignan2014cognitive}.  Besides, as the robot
+does not typically maintain a long-term socio-cognitive plan of the interaction,
+the behaviours are typically perceived as fun, yet pointless, leading to
+disengagement. This is often observed in toy-like robots (eg Vector, Dot \&
+Dash)~\parencite{hoffman2019anki}.
 
-%TODO LAAS
-%The LAAS-CNRS has played a pioneering role in this field with eg the development
-%of HATP as a hybrid task-planner for human-robot
-%interaction~\cite{Alili2008,Lallement2014} or human-aware motion
-%planning~\cite{gharbi2013natural, waldhart2015planning}.
-While effectively
+The CNRS has played a pioneering role in this field with eg the development of
+HATP as a hybrid task-planner for human-robot
+interaction~\cite{Alili2008,Lallement2014} or human-aware motion
+planning~\cite{gharbi2013natural, waldhart2015planning}.  While effectively
 enabling the robot to store and manage long-term plans, symbolic task planners
-still rely on mostly static libraries of 'canned', repetitive actions. Also
+still rely on mostly static libraries of `canned', repetitive actions. Also
 neither of these planners are well-suited to rapid, dynamic behaviours
 generation, especially in situations requiring performing parallel, blended
 actions.
 
-Building on these solid foundations, I aim at significantly advancing the state
-of the art in this regard, by combining two recent machine-learning techniques:
-(1) generative neural networks for affective robot motion
+Building nevertheless on these solid foundations, I aim at significantly
+advancing the state of the art in this regard, by combining two recent
+machine-learning techniques: (1) generative neural networks for affective robot
+motion
 generation~\parencite{yang2019appgan,marmpena2019generating,suguitan2020moveae};
 (2) interactive machine learning in high-dimensional input/output spaces, where
 I have shown with my students promising results for generating complex social
 behaviours~\parencite{senft2019teaching, winkle2020insitu} that fully involve
 the end-users~\parencite{winkle2018social}.
 
-In~\textcite{suguitan2020moveae}, a Generative Adversarial Network (GAN) is
-trained to generate expressive motions; the generation being modulated by a
-feature encoding an emotion. I will extend this idea in two ways: (1) I will
-train the GAN on multiple interaction modalities (motions, but also facial
-expressions, gaze, sounds) using the data acquired in 2.1. The aim will be to collect a
-large amount of data to train a GAN from, effectively creating a new
-multi-modal `grammar' for the robot expression.  (2) Instead of using emotions
-to modulate the generation stage, I will use the social embedding constructed in
-1.5: the generated behaviours will be shaped by the current, complex social
-state of the interaction instead of simply emotions.
-%
-%
-%
+Specifically in~\textcite{suguitan2020moveae}, a Generative Adversarial Network
+(GAN) is trained to generate expressive motions, modulated
+by a feature encoding an emotion. I will extend this idea in two ways: (1) I
+will train the GAN on multiple interaction modalities (motions, but also facial
+expressions, gaze, sounds) using the data acquired in 2.1, effectively creating
+a new multi-modal `grammar' for the robot expression.  (2) Instead of using
+emotions to modulate the generation stage, I will use the social embedding
+constructed in 1.3: the generated behaviours will be shaped by the current,
+complex social state of the interaction instead of simply emotions.
+
 %At a time where companion robots are coming to the market, one important
 %question remains fully open: how to design robot behaviours that foster
 %lasting engagement? A vast body of academic literature identifies that
@@ -901,10 +874,9 @@ state of the interaction instead of simply emotions.
 %of this main study shortly after the end of the one-year period.
 
 \begin{outcome}{2.2}
-A generative neural network
-    able to produce non-verbal yet multi-modal social behaviours. They will
-    combine expressive gestures, gazing behaviours, facial expressions, and
-    expressive sounds.
+An algorithmic approach inspired by generative neural networks to produce
+non-verbal yet multi-modal social behaviours. They will combine expressive
+gestures, gazing behaviours, facial expressions, and expressive sounds.
 \end{outcome}
 
 
@@ -918,12 +890,34 @@ A generative neural network
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Strand 3: \textbf{\wpFour}}
 
+
+
+
 Strand 3 investigates the principled integration of a cognitive
 architecture for autonomous social robots. It binds together the socio-cognitive
 perceptual capabilities of the robot developed in the Strand 1, the action
 production mechanisms developed in the Strand 2, and includes key elements from
 my 'human-in-the-loop' methodology to isolate and model the interaction principles
-and social goals of the robot.
+and social goals of the robot (Figure~\ref{fig:archi}).
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\linewidth]{figs/archi}
+\caption{Contributions of my research strands to the AI architecture at the core
+    of the research programme.}
+\label{fig:archi}
+\end{figure}
+
+Strand 3 integrates the robot cognitive capabilities in a new cognitive
+architecture for long-term social autonomy. It introduces a novel arbitration
+mechanism between action policies, to enable both long-term, goal-driven
+autonomous behaviours (conveying \emph{intentionality}, an important factor of
+human-robot engagement as shown by~\textcite{wiese2017robots}), and direct
+in-situ learning from the robot's end-users, to ensure transparency and human
+oversight.
+
+
+
 
 \subsubsection{3.1 -- A social teleology for robots}
 
@@ -933,73 +927,76 @@ been successfully applied to relatively simple cognitive
 systems~\parencite{oudeyer2005playground,moulinfrier2014self} or virtual
 agents~\parencite{pathak2017curiosity}. This first basic research activity in
 Strand 3 aims to significantly progress this line of research, and to look into
-\emph{complex} interactive cognitive systems. The key objective of this work
-package 3.1 is to define and implement a novel \emph{social teleology}: the
-\textbf{algorithmic encoding of long-term social goals} into the robot.
+complex interactive cognitive systems. The key objective of this activity
+is to define and implement a novel \emph{social teleology}: the
+algorithmic encoding of long-term social goals into the robot.
 
-This work will directly draw from the participatory, 'human-in-the-loop'
-methodological paradigms that present in Strand 5. Indeed, before being
+This work will directly draw from the participatory, `human-in-the-loop',
+methodological paradigms that I present in Strand 5. Indeed, before being
 transposed into algorithms, these long-term social goals will first be
 co-defined and co-created by the end-users and the public in terms of
-\emph{interaction principles for useful and responsible social robots}.
+\emph{interaction principles} for useful and responsible social robots.
 
 \begin{outcome}{3.1}
-The algorithmic translation of 
-    interaction principles into long-term social goals for the robot; eg a
-    long-term, socially-driven action policy for the robot.
+    The framing and algorithmic definition of a \emph{social teleology} for
+    interactive robots: an intentional, long-term, socially-driven action policy
+    for human-robot interactions.
 \end{outcome}
 
 \subsubsection{3.2 -- Learning from humans to achieve by-design responsible \&
 trustworthy AI}
 
 I have recently obtained promising results on human-in-the-loop social
-learning~\parencite{senft2019teaching,winkle2020insitu}: non-expert end-users
-teach in-situ (eg at school, at the gym, etc.) a robot, which progressively
-learns to be autonomous, eventually reaching full task- and social autonomy.
-This approach, that I developed with one of my
-students~\parencite{senft2017supervised}, holds a lot of promise in term of
-field acceptance of social robots as it entrust the end-user with a high level
-of control during the learning phase, leading to a feeling of ownership of the
-resulting robot behaviours.  I will further develop this idea, applying in-situ
-interactive reinforcement learning to more complex, real-world, situations.
+learning~\parencite[published in Science
+Robotics]{senft2019teaching},\parencite{winkle2020insitu}: non-expert end-users
+teach a robot in-situ (eg at school, at the gym, etc. and during the normal
+operations of the setting), which progressively learns to be autonomous,
+eventually reaching full task- and social autonomy.  This
+reinforcement learning-based approach, that I
+initially developed with one of my students~\parencite{senft2017supervised},
+holds a lot of promise in term of field acceptance of social robots as it
+entrusts the end-user with a high level of control during the learning phase,
+leading to a feeling of ownership of the resulting robot behaviours.  I will
+further develop this approach, with a special focus on real-world interaction
+situations where a diverse set of robot skills might need to the learnt in
+parallel.
 
-In addition, I will study through qualitative methods (thematic interviews and
-questionnaires) whether (and how) human-in-the-loop machine learning enables a
-more trustworthy AI system, by involving the end-users in the creation of the
-robot behaviours, thus offering a level of behavioural transparency to the
-end-users.
+In addition, I will study and evidence through qualitative methods whether (and how)
+human-in-the-loop machine learning enables a more trustworthy and transparent AI
+system, by involving the end-users in the creation of the robot behaviours.
 
 \begin{outcome}{3.2}
 A human-in-the-loop reinforcement
     learning paradigm, suitable for in-situ teaching of the robot by the
-    end-users themselves, demonstrated in complex social environments.
+    end-users themselves, demonstrated in complex, multi-task, social environments.
 \end{outcome}
 
 \subsubsection{3.3 -- Integrating a socially-driven architecture for long-term interaction}
 
-This research strand builds on the state of art in cognitive architectures
-(disembodied
-ones~\parencite{chong2007integrated,vernon2007survey,kingdon2008review,duch2008cognitive,langley2009cognitive,taatgen2010past,thorisson2012cognitive},
-as well as ones specifically developed for robotics:
-ACT-R/E~\parencite{trafton2013act}, HAMMER~\parencite{demiris2006hierarchical},
+This research activity builds on my past research on cognitive
+architectures~\autocite{baxter2016cognitive} and the current state of art in this
+area (both disembodied
+architectures~\parencite{chong2007integrated,vernon2007survey,kingdon2008review,duch2008cognitive,langley2009cognitive,taatgen2010past,thorisson2012cognitive}
+and architectures for interactive robots -- ACT-R/E~\parencite{trafton2013act}, HAMMER~\parencite{demiris2006hierarchical},
 PEIS Ecology~\parencite{saffiotti2005peis,daoutis2012cooperative},
 CRAM/KnowRob~\parencite{beetz2010cram, tenorth2009knowrob},
-KeJia~\parencite{chen2010developing}, POETICON++~\parencite{antunes2016from}, and
+KeJia~\parencite{chen2010developing}, POETICON++~\parencite{antunes2016from}, 
 the LAAS Architecture for Social
 Interaction~\parencite{lemaignan2017artificial}, to which I have been a key
-contributor during my PhD). The overall purpose of this
-socio-cognitive architecture is to integrate in a principled way the
-spatio-temporal and social knowledge of the robot (Strand 1) with a decision-making
-mechanism, to eventually produce socially-suitable actions (Strand 3). 
+contributor during my PhD).
 
-The decision-making mechanism is critical, and lay at the heart of my research
-project. The robot will rely on it to generate action decision that are
-purposeful, legible and engaging on the long run, something that none of the
-existing architectures have been able to successfully demonstrate to date. I aim
-at a breakthrough, and will introduce a novel approach: drawing from the
-interaction patterns identified (Strand 4), I will combine long-term,
-socially-driven goals (the \emph{social teleology}, 3.1), and human-in-the-loop
-machine learning (3.2) using a novel arbitration mechanism.
+The overall purpose of this new socio-cognitive architecture is to integrate in
+a principled way the spatio-temporal and social knowledge of the robot (Strand
+1) with a decision-making mechanism, to eventually produce socially-suitable
+actions (Strand 3).  The decision-making mechanism is critical, and lay at the
+heart of my research project. The robot will rely on it to generate action
+decision that are purposeful, legible and engaging on the long run, something
+that none of the existing architectures have been able to successfully
+demonstrate to date. I aim at a breakthrough, and will introduce a novel
+approach: drawing from the interaction patterns investigated in Strands 4 and 5,
+I will combine long-term, socially-driven goals (the \emph{social teleology},
+3.1), and human-in-the-loop machine learning (3.2) using a novel arbitration
+mechanism.
 
 The arbitration mechanism itself will build on research on reinforcement
 learning for experience transfer~\parencite{madden2004transfer} that enables the
@@ -1021,29 +1018,29 @@ end-users themselves.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Strand 4: \textbf{\wpOne}}
 
-The basic, long-term ambition of my research programme is to re-investigate the
+The basic, long-term ambition of my research programme is to revisit the
 underpinnings of human-robot interaction by taking a \textbf{strong
 human-centered perspective}. I frame this as a shift from \emph{human-robot
-interaction} to \emph{robot-supported human-human interactions} (r-HHI). This
-last major strand of research operationalises this objective in term of a basic
-contribution: examining the interplay between r-HHI, responsible
-AI, and ethics. This will be directly influenced by the experiemental work
-described in Strand 5.
+interaction} to \ul{\emph{robot-supported human-human interactions}} (r-HHI).
+This major strand of research operationalises this objective in term of basic
+contributions: on one hand, framing the interplay between r-HHI, responsible AI,
+and ethics; on the other hand, driving this change of paradigm through my own
+scientific and technical work, as well as within the broad HRI community. This
+will be directly influenced by the experiemental work described in Strand 5.
 
 \subsubsection{Conceptual framing of r-HHI and ethical framework} 
 
-The first task in Strand 4 is to research and define the framework that will provide
-the conceptual frame around questions like: what role should social robots have?
-Where to set the boundaries of artificial social interactions? What does
-`ethical-by-design', `responsible-by-design' mean in the context of social
-human-robot interactions?
+The first task in Strand 4 is to research and define the conceptual frame around
+questions like: what role should social robots have?  Where to set the
+boundaries of artificial social interactions? What does `ethical-by-design',
+`responsible-by-design' mean in the context of social human-robot interactions?
 
-Indeed, my research project involves social robots, interacting in repeated ways and
-over long period of time, with human end-users, including vulnerable children.
-This raises complex ethical issues, both practical ones (how to design the
-experimental work in a such a way that they are safe and ethically sound), and
-more fundamental ones (what is the ethical framework for robots intervening in
-socially sensitive environment?).
+Indeed, my research project involves social robots, interacting in repeated ways
+and over long period of time, with human end-users, including vulnerable ones
+(like children).  This raises complex ethical issues, both practical ones (how
+to design the experimental work in a such a way that they are safe and ethically
+sound), and more fundamental ones (what is the ethical framework for robots
+intervening in socially sensitive environment?).
 
 The ethical questions raised by social robotics have been actively studied over
 the last 5 years, attempting to address issues like:
@@ -1054,23 +1051,24 @@ the last 5 years, attempting to address issues like:
     \item can we provide guarantees that the use of social robots will always be
         ethically motivated?
     \item further on, can we implement some ethical safeguarding built-in
-        the system (like an ethical \emph{black-box}~\parencite{winfield2017case})?
+        the system (like the ethical \emph{black-box} advocated by~\textcite{winfield2017case})?
     \item what about privacy? how to trust robots in our home or school or
         hospital not to eavesdrop on our private lives, and, in the worst
         case, not be used \emph{against} us?
 \end{itemize}
 
 These questions are indeed pressing. The recent rise of personal assistants like
-Amazon Alexa or Google Home, with the major privacy concerns that accompanies
+Amazon Alexa or Google Home, with the major privacy concerns that followed
 their deployments in people home, shows that letting the industry set the agenda
 on these questions is not entirely wise -- and robots can potentially be much
 more intrusive than non-mobile smart speakers.  The EU is positioning itself at
-the forefront of those questions. The recent release of operational \textbf{Ethics
-Guidelines for Trustworthy AI} by the EU High-level Expert Group on Artificial
+the forefront of those questions. The recent release of operational Ethics
+Guidelines for Trustworthy AI by the EU High-level Expert Group on Artificial
 Intelligence~\parencite{eu2019ethics} is a strong sign of this commitment. These
-guidelines identify seven requirements of trustworthy AI:
+guidelines identify seven requirements for a trustworthy AI:
 
-\begin{enumerate}[label=\textbf{R\arabic*}]
+%\begin{enumerate}[label=\textbf{R\arabic*}]
+\begin{itemize}
     \item \textbf{Human agency and oversight}, including
             fundamental rights, human agency and human oversight
 
@@ -1095,48 +1093,45 @@ guidelines identify seven requirements of trustworthy AI:
     \item \textbf{Accountability}, including auditability, minimisation and
         reporting of negative impact, trade-offs and redress.
 
-\end{enumerate}
+%\end{enumerate}
+\end{itemize}
 
-The design methodologies and techniques employed in my research programme naturally implement
-most of these requirements: interaction co-design and human-in-the-loop machine
-learning ensures human agency oversight over the robot's behaviours (R1);
-Privacy and data governance (R3) is addressed in the project's data management
-plan and facilitated by the design decision of performing all data processing
-on-board the robot, avoiding the dissemination of personal information; the
-transparency of the robot behaviour (R4) stems from the machine learning
-approach that we advocate: the robot's behaviours primarily originate from what
-the end-users themselves taught the robot; diversity and non-discrimination (R5)
-is supported by the large-scale involvement of the public at the science centre,
-ensuring a broad diversity of backgrounds and profiles; societal wellbeing (R6)
-is the core research question of the project, and I intend to contribute in
-realising this requirement in the context of social robots.
-
-Technical robustness (R2) and accountability (R7) are important design
-guidelines for the robot's cognitive architecture (WP4), and will be addressed
-there as well.
+The design methodologies and techniques employed in my research programme
+implement most of these requirements: interaction co-design and
+human-in-the-loop machine learning ensures human agency oversight over the
+robot's behaviours; the transparency of the robot behaviour stems from the
+machine learning approach that I advocate (the robot's behaviours primarily
+originate from what the end-users themselves taught the robot); diversity and
+non-discrimination is supported by the large-scale involvement of the public at
+my experimental programme, ensuring a broad diversity of backgrounds and
+profiles; societal wellbeing is the core research question of the project, and I
+intend to contribute in realising this requirement in the context of social
+robots.  Technical robustness and accountability are important additional
+requirements, that will guide my technical work.
 
 
-The Ethics Guidelines for Trustworthy AI form a solid foundation for the
+Indeed, the Ethics Guidelines for Trustworthy AI form a solid foundation for the
 project. However, personal and social robots raise additional questions
 regarding what ethical and trustworthy systems might look like, and while the
-principles of responsible design are somewhat established~\parencite{stahl2016ethics,
-bsi2016robots}, the reality of robot-influenced social interactions is not
-fully understood yet, if only because the technology required to experience such
-interactions is only slowly maturing. 
+principles of responsible design are somewhat
+established~\parencite{stahl2016ethics, bsi2016robots}, the consequences of eg
+the social influence that robots can generate is not fully understood yet (as I
+show in~\textcite{winkle2019effective}), if only because the technology required
+to experience such interactions is only slowly maturing. 
 
 Social robots have indeed two properties that stand out, and distinguish them
 from smart speakers, for instance.  First, they are fully embodied, and they
 physically interact with their environment, from moving around, to picking up
-objects, to looking at you; second, willingly or not, they are ascribed
-\emph{agency} by people. This second difference has far-reaching consequences,
-from affective bonding to over-trust, to over-disclosure of personal, possibly
-sensitive, informations~\parencite{martelaro2016tell,shiomi2017robot}.  As an
-example, a common objection to human-robot interaction is the perceived
-deceptive nature of the robot's role. It has been
-argued~\parencite{biscontilucidi2018companion} that the underlying concern is likely
-the lack of an adequate (and novel) model of human-robot interactions to refer
-to, to which the project will provide elements of response. This needs
-nevertheless to be accounted for in depth.
+objects, to looking at you; second, willingly or not, they are ascribed much
+stronger \emph{agency} by people. This second difference has far-reaching
+consequences, from affective bonding to over-trust, to over-disclosure of
+personal, possibly sensitive,
+informations~\parencite{martelaro2016tell,shiomi2017robot}.  As an example, a
+common objection to human-robot interaction is the perceived deceptive nature of
+the robot's role. It has been argued~\parencite{biscontilucidi2018companion}
+that the underlying concern is likely the lack of an adequate (and novel) model
+of human-robot interactions to refer to, to which the project will provide
+elements of response. This needs nevertheless to be accounted for in depth.
 
 Ethical framing of social robotics has started to
 emerge under the term \textbf{roboethics}: the ``subfield of applied ethics
@@ -1148,24 +1143,15 @@ robotics~\parencite{sharkey2012granny}, have seen some additional work, but soci
 robotics is still not equipped with operational guidelines, similar to the EU
 guidelines on trustworthy AI.
 
-This is my ambition that my research will significantly contribute to the
-framing and the building of guidelines and recommendations for responsible
-human-robot interactions, enabling a safe and trustworthy  digital future in our
-society.
-
-I intend to develop this line of research by adopting the same open-science
-approach, involving the general public in the process: my field work
-experiments (Strand 5) will both \emph{build on} and
-\emph{feed into} the framework developed in this research strand.
-
-In addition, I will also structure this framing effort through international
-workshop. During these workshops, invited ethics experts (from both robotics and
-AI backgrounds) will be invited to engage with field practitioners, including
-local institutions where the experimental work will have taken place. These
-regular forums will be coordinated with the European Commission (I am already
-acting as an Expert Collaborator on ethics for the European Joint Research
-Centre), and will create a public opportunity to debate and iterate over
-ethics guidelines for responsible long-term social interactions with robots.
+I want my research to significantly contribute to the framing and the building
+of guidelines and recommendations for responsible human-robot interactions,
+enabling a safe and trustworthy  digital future in our society.  I intend to
+develop this line of research by engaging with national and international policy
+makers (for instance, I am already acting as an Expert Collaborator on ethics
+for the European Joint Research Centre), but also by adopting the same
+open-science approach, involving the general public in the process: my field
+work experiments (Strand 5) will both \emph{build on} and \emph{feed into} the
+framework developed in this research strand.
 
 \begin{outcome}{4}
 A conceptual framework that clarify and organise together the questions raised
@@ -1216,10 +1202,12 @@ interactions, aimed at informing future policy making.
 \subsection{Strand 5: \textbf{\wpFive}}
 
 I intend to scaffold and demonstrate the results of my research with an
-ambitious experimental programme. This experimental programme is two-fold:
-(1) informing the design of desirable social robots, by creating a 'crowd-scale'
-methodology to co-design and co-construct the robots' social role and
-behaviours; (2) demonstrating meaningful progress on robot-supported social
+ambitious experimental programme. This experimental programme has three main
+purposes: (1) informing the design of desirable social robots by creating a
+'crowd-scale' methodology to co-design and co-construct the robots' social role
+and behaviours with the end-users and general public; (2) acquiring large
+dataset of complex, real-world interactions that will feed back into my
+research; (3) demonstrating meaningful progress on robot-supported social
 interventions, in complex and high-impact real-world environments.
 
 
@@ -1231,21 +1219,21 @@ In order to broadly engage the public with defining what future robots should do
 to be perceived as responsible, beneficial, and engaging, I intend to create and
 deploy a novel investigation methodology that I term `experimental
 crowd-sourcing'. 
-For a whole year, and in close partnership with local institutions
-(like Toulouse's "Le Quai des Savoirs"), I will deploy the laboratory's robot(s)
-within a public space, relinquishing its
-control to the visitors themselves. Tasked with remotely operating the robot to
-assist fellow visitors, a researcher will accompany them in `inventing by doing' a new
-grammar of social interactions to develop answers to the questions: what does it
-mean for a robot to help? How to do so in the dynamic, messy, public
-environments? What are acceptable behaviours? Can we see new social norms
-emerge? At the end of this experiment, we expect 1000s of people to have
+For an extensive period of time (six months to a year), and in close partnership with local institutions, I will
+deploy social robots inside of public spaces (eg museums), relinquishing their control
+to the visitors themselves. Tasked with remotely operating the robot to assist
+fellow visitors, the participants will `invent by doing' a new
+grammar of social interactions, and sketch out answers to questions like ``what does it
+mean for a robot to help?'', ``How to do so in the dynamic, messy, public
+environments?'', ``What are acceptable behaviours?'', ``Can we see new social norms
+emerge?'' At the end of this experiment, we expect 1000s of people to have
 experienced -- and co-designed -- how robots should interact with humans in a
 positive, helpful way. Each of these experiences will contribute to uncovering
 and designing the basic principles of social interaction for robots.
 
-This work will be based on my previous research on 'human in the loop' machine
-learning~\autocite{senft2019teaching,winkle2020insitu}, while scaling it up both
+From a technical perspective, this work will be based on my previous research on
+`human-in-the-loop' machine
+learning~\autocite{senft2019teaching,winkle2020insitu}, scaled up both
 in term of duration (several months) and volume of input (hundreds of
 participants).
 
@@ -1263,10 +1251,11 @@ participants).
 %\end{collaboration}
 
 \begin{outcome}{5.1}
-A set of crowd-sourced interaction
-    patterns and principles, that will inform the long-term social goals of the
-    robot (4.1); a large dataset of social interactions to feed into Strands 2
-    and 3.
+A large-scale engagement of the general public into `thinking' the roles of
+robots, informing the work of Stranf 4; a set of crowd-sourced interaction
+patterns and principles, that will help designing the long-term social goals of the
+robot (3.1); a large dataset of social interactions to feed into Strands 1
+and 2.
 \end{outcome}
 
 \subsubsection{5.2 -- Experimental fieldwork}
@@ -1275,30 +1264,27 @@ A set of crowd-sourced interaction
 %I intend to create a strong culture of Human-Robot Interaction experimental work
 %at the LAAS-CNRS:
 As mentioned in my track-record, I have 7+ years of experience
-deploying robots 'in the wild' (including schools, gyms, medical surgeries)
+deploying robots `in the wild' (including schools, gyms, medical surgeries)
 where robots are used by non-experts in ecologically valid environments. When
-conducted with the highest standards of scientific rigour, these
+conducted with high standards of scientific rigour, these
 deployments provide invaluable insights on the actual challenges that prevent
-broader acceptance and use of robots in the society.
+broader acceptance and use of robots in the society. In the first 5 to 7 years of
+starting my role at CNRS, I will strive to demonstrate my approach with at least two
+such ambitious field experiments.
 
+The first one would typically involve the deployment of social robots in local
+special needs schools (SEN schools), building on the initial pilots that I have
+conducted at the Bristol Robotics Lab. Building on a rigorous participatory
+approach involving the school teachers, as well as the parents, we would seek to
+integrate robots in the daily life of the schools, supporting the development of
+the students' physical and social skills.
 
-
-In the first 5 years of starting my role at CNRS, I would strive to demonstrate
-my approach with two such ambitious field experiments.
-
-The first one would involve the deployment of social robots in local special needs schools
-(SEN schools), building on the initial pilots that I have conducted at the
-Bristol Robotics Lab. Building on a rigorous participatory approach
-involving the school teachers, as well as the parents, we would seek to integrate
-robots in the daily life of the schools, supporting the development of the
-students' physical and social skills.
-
-The second one could take place at Toulouse Children's Hospital, supporting
-isolated children who suffer long-term conditions, in close cooperation with the
-hospital staff. Likewise, social robots would be deployed on premises, for one
-uninterrupted year. They would integrate the daily routines of the institution,
-under supervised autonomy~\parencite{senft2017supervised}, and \emph{without}
-requiring or expecting the presence of a researcher at all time.
+The second one could for instance take place at a children's hospital, supporting
+isolated children who suffer long-term conditions in close cooperation with the
+hospital staff. Likewise, social robots would be deployed on premises, for at
+least one uninterrupted year. They would integrate the daily routines of the
+institution, under supervised autonomy~\parencite{senft2017supervised}, and
+\emph{without} requiring or expecting the presence of a researcher at all time.
 
 These two examples raise specific practical and ethical questions, as they
 target vulnerable populations. This is however an informed choice: with their
