@@ -141,31 +141,33 @@ must form the foundations of a socially useful robot, accepted and used in the
 long run.  Using user-centred design and participatory design methodologies, I
 will identify the determinants and parameters of a responsible social
 intervention, performed by a socially-driven robot, and formalise them in
-practical recommandations.
+practical principles.
 
-\paragraph{\bf O2: real-time social modeling} To create the novel cognitive
+\paragraph{\bf O2: real-time social modeling} Critical to long-term sustain
+engagement is the understanding by the robot of its social environment: this
+objective is to create the novel cognitive
 capability of artificial \emph{social situation assessment} and enable the
 robot to represent real-time social dynamics in its environment, I will
 significantly extend and integrate the current state-of-art in social signal
 processing and spatio-temporal modeling (so-called \emph{situation assessment})
 with my recent research in social state modeling, exploring as well novel
-avenues like \emph{social embeddings}.
+avenues like \emph{social embeddings} to enable better machine learning.
 
 \paragraph{\bf O3: congruent social behaviours production} 
-To create a novel way of producing non-repetitive, socially-congruent,
-expressive behaviours. This will include for instance expressive social motions using
-state-of-the-art generative neural networks to co-invent with choreographers
-a novel `body language' for robots.
+I want to explore and create novel ways of producing non-repetitive,
+socially-congruent, expressive behaviours. This includes for instance expressive
+social motions using state-of-the-art generative neural networks to co-invent
+with artists (eg choreographers) a novel `body language' for robots.
 
-\paragraph{\bf O4: embodied AI breakthrough} To create robot behaviours that are
-perceived as purposeful and intentional (long-term goals), while being shaped by
-a user-created and user-controlled action policy. I will integrate long-term
-social goals, arising from the interaction principles of \textbf{O1}, with the
-social modeling capability of \textbf{O2} and the behaviours production of
-\textbf{O3} into a principled, goal-driven cognitive architecture. The
-breakthrough will come from combining these long-term social goals with
-bottom-up action policies, designed and learnt from the end-users using
-human-in-the-loop reinforcement learning.
+\paragraph{\bf O4: embodied AI breakthrough}
+I aim to create robot behaviours that are perceived as purposeful and
+intentional (long-term goals), while being shaped by a user-created and
+user-controlled action policy. I will integrate long-term social goals, arising
+from the interaction principles of \textbf{O1}, with the social modeling
+capability of \textbf{O2} and the behaviours production of \textbf{O3} into a
+principled, goal-driven cognitive architecture. The breakthrough will come from
+combining these long-term social goals with bottom-up action policies, designed
+and learnt from the end-users using human-in-the-loop reinforcement learning.
 
 I want to specifically test the following two hypotheses: first, that long-term
 social goals, if suitably co-designed with the public and stakeholders and
@@ -176,15 +178,15 @@ elicit sustained engagement from its human users.
 Second, that human-in-the-loop machine learning can
 be used to ensure an additional layer of human oversight and a level of
 behavioural transparency.  Human-in-the-loop reinforcement learning -- as
-implemented in the SPARC approach that I have developed and already used in
-complex social
+implemented in the SPARC approach that I have developed with my students and
+already used in complex social
 environments~\parencite{senft2017supervised,senft2019teaching,winkle2020insitu}
 -- relies on an end-user `teacher'. This teacher initially fully controls the
 robot (via teleoperation) while it learns the action policy, and then
 progressively relinquishes control up to a point where the robot is effectively
-autonomous. As I previsouly argued~\parencite{senft2019teaching}, this approach
+autonomous. As I previsouly argued in~\textcite{senft2019teaching}, this approach
 leads to increased control and ownership of the system, and as a result,
-increased trust on the part of end-users.
+increased trust from the end-users.
 
 This objective also raises one additional question: how to \emph{arbitrate}
 between a top-down action policy arising from the long-term goals and the
@@ -250,11 +252,10 @@ long-term social human-robot interactions.
 \section{Research programme}
 
 
-The five scientific objectives presented in the previous section underpin my
-research vision and scientific programme. This section presents how I intend
-to \emph{implement} these objectives, i.e.  what are the major research
-directions that I will research, develop and establish as active research fields
-in the coming years.
+These five scientific objectives underpin my research vision and scientific
+programme. This section presents how I intend to implement these objectives,
+i.e.  what are the major research directions that I will research, develop and
+establish as active research fields in the coming years.
 
 \vspace{0.5em}
 I intend to organise my research along \textbf{4+1 main research
@@ -289,7 +290,7 @@ activity (objective O5), realised in the transversal {\bf Strand 5}.
 %research scientist, I will build-up an ambitious \textbf{experimental capacity}
 %at LAAS-CNRS, that will significantly improve upon the current, mostly
 %lab-based, experimental work conducted to date.
-Building on my extensive
+Building on my own extensive
 experience in real-world deployments of autonomous social robots (as outlined in
 my academic track-record), I will establish an ambitious experimental programme,
 in close partnership with local institutions, based on the field's best
@@ -319,10 +320,10 @@ robots.
 Figure~\ref{fig:wps} gives an overview of how the research directions interact
 with each other. Fieldwork (\textbf{Strand 5}) plays a central role in my research programme, and
 appears in the centre of the figure. Indeed, the deployment of autonomous social
-robots in real-world, meaningful social spaces (eg. in schools, Toulouse's
-Purpan hospital, Toulouse's science centre 'Le Quai des Savoirs', etc) will be
+robots in real-world, meaningful social spaces (eg. in schools, hospitals,
+museums and science centres, etc) will be
 integral to my research methodology, and will enable the development of
-`public-in-the-loop' experiments (4.2): the public, by co-designing interventions,
+`public-in-the-loop' experiments (5.1): the public, by co-designing interventions,
 interacting and, at time, taking direct control of the robots, will shape what a
 useful and socially acceptable interaction looks like, and lead to the
 \emph{definition of core interaction principles}. Using machine learning to learn from
@@ -331,18 +332,19 @@ algorithmic models, guiding the \emph{social teleology} of the cognitive archite
 (3.1).
 
 The regular fieldwork I intend to conduct will also provide the source of data
-to feed into to Strand 1: \textbf{Strand 1}, focusing on \emph{social situation
+to feed into Strand 1: \textbf{Strand 1}, focusing on \emph{social situation
 assessment}, researches, develops, and integrates all the components pertaining
 to the assessment of the spatio-temporal and social environment of the robot.
 Reference interaction situations and the interaction datasets required to
 support this research is directly drawn from the experimental fieldwork, as well
 as an additional, focused experimental programme on mental states modeling that
-I detail in the following sections.
+I detail hereafter.
 
-These perceptual capabilities are both (1) continuously integrated into the
-robot's cognitive architecture (3.3), iteratively improving the socio-cognitive
-performances of the robot, (2) disseminated to the broader community through
-standardisation and integration to the ROS ecosystem.
+These perceptual capabilities are both continuously integrated into the robot's
+cognitive architecture (3.3), iteratively improving the socio-cognitive
+performances of the robot, and disseminated to the broader community through
+standardisation and integration to the international Robot Operating System
+(ROS) ecosystem.
 
 \textbf{Strand 2} looks into behaviour generation using immersive teleoperation
 to investigate novel non-verbal interaction modalities (2.1), combined with
@@ -357,47 +359,41 @@ novel immersive techniques presented below. Similar to Strand 1, the newly
 developed capability of generating socially congruent behaviours is continuously
 integrated in the robot architecture.
 
+%\subsubsection*{Towards building a principled cognitive architecture}
 
-My research project includes an ambitious, beyond-state-of-art, technical work
-programme, and \textbf{Strand 3} investigates the \emph{principled} integration
-of a cognitive architecture for autonomous social robots.  Indeed, in addition
-to the integration of the results of Strand 1 and Strand 2, Strand 3 is also
-researching and developing the socio-cognitive principles, or \emph{drives} of
+Finally, an important part of my research programme contributes to the design
+and implementation of a novel, principled cognitive architecture for socially
+intelligent robots (\textbf{Strand 3}). In addition
+to the integration of Strand 1 and Strand 2, Strand 3 is also about
+researching and developing the socio-cognitive principles, or \emph{drives}, of
 the architecture. They will be identified both from the 'public-in-the-loop'
 research and end-user engagement conducted in \textbf{Strand 4}, and an novel
 research on intrinsic social motivation that I detail below.
-
-\subsubsection*{Towards building a principled cognitive architecture}
-
-As such, an important part of my research programme contributes to the design
-and implementation of a novel, complete cognitive architecture for socially
-intelligent robots. While I detail in a following section the scientific
-underpinnings of this research, Figure~\ref{fig:archi} illustrates how my
-different research strands combine towards that goal.
-
-\begin{figure}[h!]
-\centering
-\includegraphics[width=\linewidth]{figs/archi}
-\caption{Contributions of my research strands to the AI architecture at the core
-    of the research programme. Some capabilities already developed at the host
-    lab (grey blocks) will directly contribute to the practical realisation of autonomy.}
-\label{fig:archi}
-\end{figure}
-
-
-Strand 1 (top) focuses on creating a novel, integrated model of the social
-environment of the robot; it will build on the current state of art in spatial
-modeling, semantic modeling and interaction history representation, and augment
-it with representations of the social dynamics around the robot, introducing the
-idea of \emph{social embeddings}. Strand 2 (bottom) significantly improve upon
-techniques for non-repetitive, socially-congruent behaviour production,
-combining behaviour design and data acquisition using immersive teleoperation
-with recent advances in generative neural nets. Strand 3 (centre) integrates the
-robot cognitive capabilities in a new cognitive architecture for long-term
-social autonomy. It introduces a novel arbitration mechanism between action
-policies, to enable both long-term, goal-driven autonomous behaviours, and
-direct in-situ learning from the robot's end-users, to ensure transparency and
-human oversight.
+%
+%
+%\begin{figure}[h!]
+%\centering
+%\includegraphics[width=\linewidth]{figs/archi}
+%\caption{Contributions of my research strands to the AI architecture at the core
+%    of the research programme. Some capabilities already developed at the host
+%    lab (grey blocks) will directly contribute to the practical realisation of autonomy.}
+%\label{fig:archi}
+%\end{figure}
+%
+%Figure~\ref{fig:archi} illustrates what this architecture could look like.
+%Strand 1 (top) focuses on creating a novel, integrated model of the social
+%environment of the robot; it will build on the current state of art in spatial
+%modeling, semantic modeling and interaction history representation, and augment
+%it with representations of the social dynamics around the robot, introducing the
+%idea of \emph{social embeddings}. Strand 2 (bottom) significantly improve upon
+%techniques for non-repetitive, socially-congruent behaviour production,
+%combining behaviour design and data acquisition using immersive teleoperation
+%with recent advances in generative neural nets. Strand 3 (centre) integrates the
+%robot cognitive capabilities in a new cognitive architecture for long-term
+%social autonomy. It introduces a novel arbitration mechanism between action
+%policies, to enable both long-term, goal-driven autonomous behaviours, and
+%direct in-situ learning from the robot's end-users, to ensure transparency and
+%human oversight.
 
 
 The following sections describe in greater detail each of these research
@@ -425,10 +421,10 @@ art in \emph{situation assessment} and \emph{knowledge representation}, and
 extend it to the social sphere (Figure~\ref{fig:strand1}).
 
 Indeed, knowledge representation and grounding is a fundamental building block
-for cognitive architectures, as I have
-shown~\parencite{lemaignan2017artificial}, in fact this first research strand
+for cognitive architectures, as I have previously
+shown~\parencite{lemaignan2017artificial}. In fact this first research strand
 builds on existing work on symbolic knowledge representation
-(eg.~\parencite{tenorth2009knowrob} or my own work~\parencite{lemaignan2010oro})
+(eg.~\parencite{tenorth2009knowrob, lemaignan2010oro})
 and my work on situation assessment~\parencite{lemaignan2018underworlds,
 sallami2019simulation} to create a coherent system of representations for the
 cognitive architecture, that I will further improve with recent advances in symbolic
@@ -453,19 +449,20 @@ in the robot's vicinity. I have recently introduced a dataset of social
 interaction~\parencite{lemaignan2018pinsoro} that enables for the first time a
 quantitative, data-driven investigation of social dynamics. Promising initial
 results led me to uncover three latent constructs that underpin social
-interactions~\parencite{bartlett2019what}. This dataset and the related methodologies
-on data-driven social modeling will form the basis of this research workpackage,
-and will exploit the natural interaction data collected in Strand 5.
-
+interactions~\parencite{bartlett2019what}. I want to combine this emerging
+data-driven paradigm with my previous research on the psycho-social determinants
+of the interaction (anthropomorphism, trust, persuasion, etc.) to define and
+implement a holistic, multi-modal model of the human, suitable for real-time
+HRI.
 
 From modelling the human, I will then investigate automatic understanding and
 modelling of group-level social interactions~\parencite{tapus2019perceiving},
 including $f$-formations~\parencite{marshall2011using}, sociograms (as done
 in~\textcite{garcia2016hybrid} for instance), and inter-personal
 affordances~\parencite{pandey2013affordance}. This task builds on literature on
-on social dynamics analysis
-(eg~\parencite{durantin2017social,jermann2009physical, martinez2019collocated})
-to apply it to real-time social assessment by a robot, itself embedded into the
+social dynamics analysis, eg~\parencite{durantin2017social,jermann2009physical,
+martinez2019collocated},
+and apply it to real-time social assessment by a robot, itself embedded into the
 interaction.
 
 \begin{outcome}{1.1}
@@ -479,47 +476,49 @@ interaction.
 \subsubsection{1.2 -- Social situation assessment}
 
 
-In 1.2, I integrate the social
-cues from 1.1 with traditional situation assessment platforms. It will
-result in a socio-cognitive model of the social environment of the robot that I
-term \emph{social situation assessment}. It effectively extends the
-existing spatio-temporal representation capabilities of robots to the social
-sphere, and covers the development of a complete social assessment pipeline,
-from social signal perception (like automatic attention tracking, face
-recognition, sound localisation, etc.) to higher-level socio-cognitive
-constructs, including group dynamics and perspective
-taking~\parencite{flavell1992perspectives} (as I previously framed
-in~\textcite{lemaignan2015mutual, dillenbourg2016symmetry}).
+In 1.2, I integrate the social cues from 1.1 with traditional situation
+assessment platforms. It will result in a socio-cognitive model of the social
+environment of the robot that I term \emph{social situation assessment}. It
+effectively extends the existing spatio-temporal representation capabilities of
+robots to the social sphere, and covers the development of a complete social
+assessment pipeline, from social signal perception (like automatic attention
+tracking, face recognition, sound localisation, etc.) to higher-level
+socio-cognitive constructs, including group dynamics, perspective
+taking~\parencite{flavell1992perspectives} and mutual
+modeling/mentalizing~\autocite{lemaignan2015mutual, dillenbourg2016symmetry}.
 
 \begin{outcome}{1.2}
-A novel cognitive sub-system for social
-    situation assessment, released as an open-source set of integrated ROS
-    modules ("\emph{ROS4HRI}", Figure~\ref{fig:ros4hri}). This set of tools will enable the robot to
-    represent its physical and social environment, and perform queries about it,
-    including queries about past events (temporal model) and queries requiring
-    higher socio-cognitive perceptual capabilities like perspective taking.
+A novel cognitive sub-system for social situation assessment, integrated in an
+open-source software framework (see technical contributions
+page~\pageref{sec:technical}). This cognitive system will enable the robot
+to represent its physical and social environment, and perform queries about
+it, including queries about past events (temporal model) and queries
+requiring higher socio-cognitive perceptual capabilities like perspective taking
+and mentalizing.
 \end{outcome}
 
 
 \subsubsection{1.3 -- Social embeddings}
 
-One of the key novel scientific idea that I will research in this workpackage is
+One of the key novel scientific idea that I will research in this strand is
 the construction of a meaningful \textbf{social embedding} for the robot.
-\emph{Embeddings}, in machine learning, are compact, low-dimensional
-representation of a much more complex phenomenon. Well-known examples of such embeddings
-include \emph{word embeddings} (eg.
+\emph{Embeddings}, as a machine learning concept, are compact, low-dimensional
+representations of much more complex phenomena. A well-known example of such embeddings
+is \emph{word embeddings} (eg.
 \emph{word2vec}~\autocite{mikolov2013distributed} or \emph{GloVe}~\autocite{pennington2014glove}) where
 words are projected into a $n$-dimensional space (with eg. $n = 300$ in the case
 of \emph{GloVe}). Such an embedding can be constructed such as Euclidian
 distance in the embedding reflects semantic distance in the word-space, making
 it computationally inexpensive to represent and manipulate words' semantics.
+Similar embeddings are used in social signal processing, for instance for
+face~\autocite{schroff2015facenet} or gesture~\autocite{ge2008hand} recognition.
 
 I believe a similar approach could be devised for social interactions:
 constructing a low-dimensional embedding onto which social situations can be
 projected while they are perceived by the robot.
 Note that the additional complexity introduced by the dynamic nature of the interaction
 (ie, a social situation needs to be observed for some time to be correctly
-interpreted) can be overcome using for instance a transformer
+interpreted) could in principle be overcome using for instance a transformer
 architecture~\autocite{vaswani2017attention}, as done for action recognition
 in eg.~\textcite{girdhar2019video}.
 
@@ -537,36 +536,24 @@ The investigation of \emph{social
     environment of interactive robots.
 \end{outcome}
 
-\subsubsection{Experimental programme of Strand 1}
+\subsubsection{Focused experimental programme}
 
-In complement to the large-scale experimental work described in Strand 5, a focused experimental programme accompanies Strand 1, to demonstrate (in relative
-isolation) the resulting socio-cognitive capabilities. I will implement a subset
-of the experimental protocols identified by~\textcite{frith1994autism} to investigate theory of mind with autistic
-children, as it offers an excellent experimental framework for social
-robotics, as I argued in~\textcite{lemaignan2015mutual}.
+In complement to the large-scale experimental work described in Strand 5, a
+focused experimental programme accompanies Strand 1, to specifically support and
+demonstrate the investigation of these socio-cognitive capabilities.
 
-Indeed, experimental protocols in research on autistic spectrum disorders are often
-striking by their apparent straightforwardness because of the careful choice of
-interaction modalities: since autistic children frequently exhibit impairments
-beyond social ones (such as motor or linguistic ones), the experiments must be
-designed such that they require only basic cognitive skills beyond the social
-abilities that are tested. The Sally and Anne task, for instance, requires the
-observing child to be able to visually follow the marble, to remember the true
-location of the marble, to understand simple questions (``Where will Sally look
-for her marble?'' in Baron-Cohen's protocol~\parencite{baron1985does}) and eventually
-to give an answer, either verbally or with a gesture -- the two first points
-being actually explicitly checked through questions: ``Where is the marble
-really?'' (reality control question) and ``Where was the marble in the
-beginning?'' (memory control question).
-
-Likewise, current social robots have limited cognitive skills (no fast yet fine
-motor skills, limited speech production and understanding, limited scene
-segmentation and object recognition capabilities, etc.) and such tasks that
-effectively test a single cognitive skill (in this case, mentalizing) in near
-isolation are of high relevance for experimental social
-robotics~\parencite{lemaignan2015mutual}, offering rich experimental
-opportunities, early on in the development process of the complete cognitive
-architecture.
+I intend implement a subset of the experimental protocols identified
+by~\textcite{frith1994autism} to investigate theory of mind with autistic
+children, as it offers an excellent experimental framework for social robotics,
+as I argued in~\textcite{lemaignan2015mutual}.  Indeed, experimental protocols
+in research on autistic spectrum disorders are often striking by their apparent
+straightforwardness because of the careful choice of interaction modalities:
+since autistic children frequently exhibit impairments beyond social ones (such
+as motor or linguistic ones), the experiments must be designed such that they
+require only basic cognitive skills beyond the social abilities that are tested.
+This makes them especially well-suited for experimental robotics, properly
+isolating the cognitive competencies that we want to test and evidence early on
+in the development process of a complete cognitive architecture.
 
 \begin{table}[h]
     \centering
@@ -591,29 +578,14 @@ architecture.
 Frith and Happé's list (Table~\ref{mentalizing-tasks}) is in that regard
 especially interesting in that it mirrors pairs of task (ones which do not
 require mentalizing with similar ones which do require mentalizing), thus
-providing control tasks. \emph{Object occlusion} vs.~\emph{Information
-occlusion} is one example of a pair of tasks which evidence
-representation-level perspective taking through \emph{adaptive deception}.
-%during a simple game, the experimenter adapts its strategy
-%(deceptive/non-deceptive behaviour) to the representation skills of its child
-%opponent. The experimental setting is derived from the penny-hiding game
-%protocol originally proposed by Oswald and Ollendick\parencite{oswald1989role} and
-%replicated and extended by Baron-Cohen in\parencite{baron1992out}, who describes it
-%as a two-person game in which the subject is actively involved, either as a
-%guesser or as a hider. The hider hides the penny in one hand or the other, and
-%then invites a guess. The game is repeated several time before switching the
-%roles. Baron-Cohen proposes a specific index to rate the level of the players
-%based on the idea of \emph{information occlusion}: minimally, the hider must
-%ensure \emph{object occlusion} (the penny must not become visible to the
-%guesser), while good hiders, with representation-level perspective taking
-%skills, develop strategies (like random hand switching or deictic hints at the
-%wrong hand) to prevent the guesser to find the penny (\emph{information
-%occlusion}).
-Adapting such a protocol for a human-robot pair would demonstrate
-\emph{second-order}, \emph{representation-level} perspective
-taking capabilities, which is beyond the state-of-the-art in an artificial
-cognitive system.
-
+providing good control tasks.
+I intend to implement several of these tasks to support Strand 1's contributions
+to basic research in artificial social cognition --
+\emph{Object occlusion} vs.~\emph{Information
+occlusion}~\parencite{baron1992out}, for instance, evidences \emph{representation-level} perspective taking: adapting such a
+protocol for human-robot pairs would demonstrate \emph{second-order},
+\emph{representation-level} perspective taking capabilities, which is beyond the
+state-of-the-art in an artificial cognitive system.
 
 
 
@@ -660,8 +632,7 @@ non-verbal utterances using sounds, gaze, joint attention).
 %\end{collaboration}
 
 
-\subsubsection{2.1 -- Immersive teleoperation to design richer non-verbal
-interactions}
+\subsubsection{2.1 -- Design of novel interaction modalities}
 
 %\begin{figure}[!htbp]
 %\centering
@@ -669,26 +640,32 @@ interactions}
 %\caption{Cozmo facial expressions}
 %\end{figure}
 
-As part of Strand 2, I also intend to lead research on novel non-verbal
-interaction modality for social robots. This direction of research, tightly
-related to the previous one, will pursue an interdisciplinary approach: from
-creating a novel body language for social robot with choreographers, to
+As part of Strand 2, I intend to lead research on novel non-verbal
+interaction modality for social robots. I will pursue an interdisciplinary,
+bottom-up approach involving artists and field practitioners, exploring new
+communication modalities like
+creating a body language for social robot with choreographers, or
 investigating new forms of sound expressions like soundscapes with sound
-experts: soundscapes are about creating a sound environment that reflects a
-particular situation; they also have been shown to be an effective intervention
-technique in the context special needs treatments
-(eg~\textcite{greher2010soundscape}). The soundscapes that we will research and
-create, are `owned' by the robot, and it can manipulate it itself, eg to create
-an approachable, non-threatening, non-judgmental, social interaction context, or
-to the establish the interaction into a trusted physical and emotional
-safe-space for the children.
+experts (soundscapes are sound environments that reflects a
+particular situation; they have been shown to be an effective intervention
+technique in the context special needs treatments, eg~\textcite{greher2010soundscape}).
 
-\TODO{Complete the 'immersive teleoperation for behaviour design' part}
+I specifically want to question the traditionally uncreative approach of HRI
+where human codes of communication are typically replicated `as it' on robots.
+To discover new modes of interaction, potentially better-suited to sustain
+long-term engagement, I want to invite artists and creators of diverse
+backgrounds to create new, original communication codes (like I did with
+comedians in the \emph{roboscopie} theatre
+play~\autocite{lemaignan2012roboscopie}).
 
- with a dataset co-created with artists (for instance,
-a choreographer): during a period of time, a choreographer would join the lab and remotely `puppet'
-a robot which would be itself interacting with the lab members
-(Figure~\ref{fig:puppet-robot})
+As an illustration, Figure~\ref{fig:puppet-robot} shows an immersive setup where
+a dancer or a choreographer `takes control' of the robot's body via motion
+capture, while seeing through the robots' eyes (VR headset or a CAVE projection,
+similar to~\parencite{bailly2015beaming}).  For a period of time, the artist
+`wizard' is tasked to invent a body language for the robot while interacting
+with the humans it meets, by remotely controlling the robot. This would result
+in a large dataset of freely created, socially-congruent physical behaviours, that would directly
+feed into eg Generative Adversarial Networks, as presented below.
 
 \begin{figure}
     \centering
@@ -698,7 +675,7 @@ a robot which would be itself interacting with the lab members
     animations, is mounted on a robotic arm.  It can freely orient its `gaze'
     and use expressive movements. The robot is effectively teleoperated in
     realtime by an artist (eg choreographer, right) who 'sees through the
-    robots' eyes'~\parencite{bailly2015beaming} and who is tasked with designing and
+    robots' eyes' and who is tasked with designing and
     acting a novel 'body language' for social interactions.}
 
 \end{figure}
@@ -1345,6 +1322,7 @@ thoroughness of the ethical guidelines.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Developing methodological and technical excellence}
+\label{sec:technical}
 
 Finally, I would like to sketch out my intended contributions to one key
 underpinning of my research programme: technical and methodological excellence.
@@ -1484,7 +1462,7 @@ Finally, I see fostering \textbf{open science best practices} as a cornerstone
 of technical and methodological excellence. I am a long-standing open science
 proponent and I have led a number of targeted actions to further develop these
 practices: the publication and an analysis of the current practices and
-recommandations in field of human-robot
+recommendations in field of human-robot
 interaction~\autocite{baxter2016characterising}; the publication of large open
 datasets~\autocite{childrenspeech2016, pinsoro2018, lemaignan2018pinsoro}; open
 access publishing; a large corpus of open-source contributions
